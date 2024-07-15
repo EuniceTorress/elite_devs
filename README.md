@@ -31,9 +31,9 @@ Software Needed in the Development
 # Functional Requirements:
 
 1. System Requirements:
-  - Real-time data analytics for inventory management.
-  - Automated stock updates from daily sales reports.
-  - Reservation functionality for students, faculty members and staff.
+    - Real-time data analytics for inventory management.
+    - Automated stock updates from daily sales reports.
+    - Reservation functionality for students, faculty members and staff.
 
 2. User Authentication and Authorization:
       - Secure login and role-based access control (Admin,User).
