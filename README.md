@@ -50,11 +50,10 @@ Software Needed in the Development
 
 5. Resource Management:
     - Track and manage inventory of resources (e.g., equipment, materials).
-    - Allocate resources to specific projects or departments.
     - Monitor resource usage and availability.
 
 6. Notifications and Alerts:
-    - Notify users of low stock levels or critical resource conditions.
+    - Notify users of low stock levels.
     - Alert for upcoming report deadlines or system events.
 
 7. Data Visualization:
