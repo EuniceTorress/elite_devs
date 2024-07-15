@@ -62,7 +62,7 @@ Software Needed in the Development
     - Comparative analysis of resource metrics over time.
 
 8. Integration and Data Sources:
-    - Integrate with existing data sources (e.g., databases, APIs).
+    - Integrate with existing data sources (e.g., databases).
     - Support for importing/exporting data from/to external systems.
 
 # Non-Functional Requirements:
@@ -86,10 +86,6 @@ Software Needed in the Development
 6. Usability:
     - Intuitive user interface design for ease of navigation.
     - Support for multiple devices (desktop, tablet, mobile).
-
-7. Compliance:
-    - Adherence to relevant data protection regulations (e.g., GDPR, HIPAA).
-    - Compliance with institutional policies and standards.
 
 # Implementation and Deployment Requirements:
 1. Technology Stack:
