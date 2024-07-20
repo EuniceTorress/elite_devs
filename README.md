@@ -5,119 +5,114 @@
 2. Boteros, Angela Jane P.
 3. Torres, Eunice Ann Mae B.
 
-# Capstone Requirement List
+# ADVISER
+Asst. Prof. Renz Mervin A. Salac
 
-Hardware Needed in the Development
+# FEATURES
 
-| Hardware             | Specification                            | Function                                                                                                                                                                  |
-|----------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Processor            | at least 2.5 GHz                         | Facilitates data processing, computational activities, and supports the inventory management system for efficient operation.                                              |
-| Random Access Memory | 8GB                                      | Temporarily stores data and applications in use, ensuring smooth multitasking and effective system functioning.                                                         |
-| Solid State Drive    | 1TB                                      | Stores user data, databases, and system files, providing fast access to information crucial for the inventory management system.                                        |
-| Monitor Resolution   | Minimum Full HD (1920 x 1080 pixels)     | Delivers high clarity and detail in visual output, enhancing readability of on-screen content and improving user experience with the system.                            |
-| Keyboard             | USB / Wireless Keyboard                  | Enables user interaction and input, facilitating control over software programs and the inventory management system through text and commands.                           |
-| Mouse                | USB / Wireless Mouse                     | Enhances user productivity by providing precise cursor control and interaction with graphical user interfaces (GUIs) of the inventory management system.             |
+# 1. Automated Report Generation
+Functionality:
+- Automatically generate reports on specified schedules (daily, weekly, monthly).
+- Allow customization of report parameters (date range, data filters).
+- Support report formats (PDF, CSV).
 
-Software Needed in the Development
+Performance:
+- Ensure reports are generated within a specified time frame.
+- Ensure that the system can work quickly and smoothly even when dealing with a lot of data.
 
-| Software                          | Specification                                                                                          | Function                                                                                                                                                                                                 |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Programming Language              | PHP, JavaScript, CSS, Bootstrap                                                                        | PHP on the server side for building dynamic web applications, JavaScript for client-side interactivity, Bootstrap for cross-device responsiveness, CSS for web page design.                              |
-| Integrated Development Environment| Visual Studio Code                                                                                    | IDE for web application development, debugging, and deployment.                                                                                                                                           |
-| Website Server                    | XAMPP (Apache HTTP Server)                                                                             | Local server environment providing Apache HTTP Server for webpage hosting, PHP for server-side scripting, MySQL for database management.                                                                  |
-| Database                          | MySQL                                                                                                | Relational database management system for organizing and accessing data such as system logs, user information, and inventory records.                                                                    |
+# 2. Real-Time Analytics
+Functionality:
+- Provide real-time data visualization and analytics.
+- Support interactive dashboards for dynamic data exploration.
+- Enable real-time monitoring of key metrics and KPIs.
 
+Scalability:
+- Make sure the system can handle more data and more people using it at the same time without slowing down or crashing.
+- Make sure the system stays fast and responsive even when a lot of people are using it at once.
 
-# Functional Requirements:
+# 3. Reservation
+Functionality:
+- Allow users to browse availability and make reservations.
+- Support different types of reservations (e.g., items from RGO and facilities).
+- Provide confirmation functionalities.
 
-1. System Requirements:
-    - Real-time data analytics for inventory management.
-    - Automated stock updates from daily sales reports.
-    - Reservation functionality for students, faculty members and staff.
+Integration:
+- Integrate with calendar systems for synchronized scheduling.
 
-2. User Authentication and Authorization:
-      - Secure login and role-based access control (Admin,User).
+# 4. Rentals
+Functionality:
+- Manage inventory of rental items (e.g., facilities).
+- Facilitate rental booking, and scheduling processes.
 
-3. Dashboard and Real-Time Analytics:
-    - Display real-time data on resource generation metrics.
-    - Graphical representation of resource stocks and trends.
-    - Analytics on resource utilization and efficiency.
+Tracking and Management:
+- Track rental status (approved, pending, declined) in real-time.
 
-4. Automated Report Generation:
-    - Scheduled and on-demand report generation.
-    - Customizable report templates (e.g., daily, weekly, monthly)
-    - Export reports in common formats (PDF).
+# 5. Data Visualization
+Functionality:
+- Provide comprehensive data overview and insights.
+- Present summarized data trends and patterns.
+- Support detailed data analysis with drill-down capabilities.
 
-5. Resource Management:
-    - Track and manage inventory of resources (e.g., equipment, materials).
-    - Monitor resource usage and availability.
+Visualization:
+- Generate visual representations such as charts, graphs, and tables.
+- Enable customization of data views based on user preferences.
 
-6. Notifications and Alerts:
-    - Notify users of low stock levels.
-    - Alert for upcoming report deadlines or system events.
+Integration:
+- Integrate with existing data sources and databases.
+- Support export of insights for further analysis or reporting purposes.
 
-7. Data Visualization:
-    - Interactive charts and graphs for data exploration.
-    - Comparative analysis of resource metrics over time.
+Accessibility:
+- Ensure data insights are accessible to authorized users securely.
+- Provide role-based access control for sensitive information.
 
-8. Integration and Data Sources:
-    - Integrate with existing data sources (e.g., databases).
-    - Support for importing/exporting data from/to external systems.
+# TECHNOLOGY TO BE USED
 
-# Non-Functional Requirements:
+# 1. XAMPP Stack Integration
 
-1. Security:
-    - Ensure data encryption during transmission and storage.
-    - Implement role-based access controls to protect sensitive information.
+- Description: Utilize XAMPP featuring Apache, MySQL, and PHP for local development and testing.
+- Benefits: Simplifies creation and testing of database-driven applications before deployment.
 
-3. Performance:
-    - System responsiveness under peak loads.
-    - Minimal latency for real-time data updates and analytics processing.
+# 2. Apache HTTP Server
 
-4. Scalability:
-    - Support for scaling as the number of users and data volume increases.
-    - Ability to handle concurrent users and large datasets.
+- Description: Manage HTTP server functions to host and facilitate web page access.
+- Benefits: Ensure seamless communication between user interface and database for efficient data retrieval and interaction.
 
-5. Reliability:
-    - High availability with minimal downtime for maintenance.
-    - Data backup and disaster recovery procedures.
+# 3. MySQL Database Management
 
-6. Usability:
-    - Intuitive user interface design for ease of navigation.
-    - Support for multiple devices (desktop, tablet, mobile).
+- Description: Manage various data types including logs, reservations, sales, inventory, and user details.
+- Benefits: Enable secure authentication, robust inventory management, and efficient reporting.
 
-# Implementation and Deployment Requirements:
-1. Technology Stack:
-    - Specify the programming languages, frameworks, and tools to be used.
-    - Ensure compatibility with existing IT infrastructure.
+# 4. PHP for Server-side Scripting
 
-2. Deployment Environment:
-    - Define hosting requirements (cloud-based, on-premise).
-    - Consider scalability and performance implications.
+- Description: Enable dynamic web functions, user identification, reservation processing, and database communication.
+- Benefits: Ensure reliable backend operations and data management for the system.
 
-3. Training and Support:
-    - Provide training materials and sessions for system users.
-    - Establish a support mechanism for troubleshooting and user assistance.
+# 5. CSS Styling
 
-4. Documentation:
-    - Comprehensive documentation for system architecture, design, and usage.
-    - Include maintenance procedures and troubleshooting guides.
+- Description: Enhance user interfaces with visually appealing layouts, styled buttons, forms, and navigation menus.
+- Benefits: Improve usability and consistency across inventory management pages, ensuring responsive design for different devices.
 
-5. Testing:
-    - Conduct rigorous testing (unit, integration, and acceptance testing).
-    - Ensure system reliability and functionality across different scenarios.
+# 6. HTML for Structuring Content
 
-# Project Management Requirements:
+- Description: Structure inventory data presentation and user interfaces with forms, tables, and interactive elements.
+- Benefits: Ensure responsiveness, accessibility, and user-friendliness for administrators and stakeholders.
 
-1. Timeline and Milestones:
-    - Define project phases and deliverables.
-    - Set deadlines for development, testing, and deployment stages.
+# 7. JavaScript for Dynamic Functionality
 
-2. Communication:
-    - Establish regular communication channels (meetings, progress reports).
-    - Ensure collaboration between developers, stakeholders, and end-users.
+- Description: Implement real-time updates for inventory changes without page reloads, enhance data accuracy, and integrate with external tools for features like real-time analytics and automatic reports.
+- Benefits: Improve user interface interactivity and functionality, enhancing overall system usability and efficiency.
 
-3. Feedback and Iteration:
-    - Gather feedback from stakeholders and end-users during development.
-    - Incorporate iterative improvements based on feedback.
+# 8. Bootstrap Framework Integration
+
+- Description: Improve interface design with responsive layouts and a flexible grid system for better navigation and readability of inventory data.
+- Benefits: Enhance user experience across different devices, supporting efficient operations for the Resource Generation Office at BSU-ARASOF Nasugbu Campus.
+
+# Additional Considerations:
+- Security: Implement secure data handling practices to protect sensitive information.
+- Scalability: Design the system to accommodate future growth in data volume and user base.
+- Integration: Ensure seamless integration with existing campus systems or future enhancements.
+
+# REQUIREMENTS FLOW
+                                       
+
 
