@@ -10,7 +10,7 @@ body {
 
 header {
   background-color: #ffffff;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
   padding: 5px 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -34,7 +34,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 
 .header-right {
   display: flex;
@@ -60,7 +59,7 @@ header {
 }
 
 .profile-pic {
-  height: 60px; /* Adjust the size as needed */
+  height: 60px; 
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -81,23 +80,22 @@ header {
   color: #555;
 }
 
-/* Custom styles for alignment */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust height as needed for vertical centering */
+  height: 100vh; 
 }
 .table {
-  width: 80%; /* Adjust table width as needed */
-  margin-top: 20px; /* Optional margin for top spacing */
+  width: 80%; 
+  margin-top: 20px; 
 }
 .table th,
 .table td {
-  text-align: center; /* Center-align table cells */
+  text-align: center; 
 }
 .action-column {
-  white-space: nowrap; /* Prevent button wrapping */
+  white-space: nowrap; 
 }
 
 .sidebar {
@@ -106,7 +104,6 @@ header {
   margin-left: 30px;
 
 }
-
 
 .sidebar a {
   font-family: 'Times New Roman';
