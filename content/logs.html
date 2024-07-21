@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="logs-container">
+        <div class="box-shadow">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Login</td>
+                        <td>User logged into system</td>
+                        <td>2024-07-12 10:23:45</td>
+                    </tr>
+                    <tr>
+                        <td>Error</td>
+                        <td>Failed to process payment</td>
+                        <td>2024-07-11 15:42:30</td>
+                    </tr>
+                    <!-- Additional rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<style>
+    .logs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .box-shadow {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+        padding: 20px; /* Padding inside the box */
+        width: 70%; /* Adjust box width as needed */
+    }
+
+    .table {
+        width: 100%; /* Ensure table takes full width */
+    }
+
+    .action-column {
+        text-align: center;
+    }
+
+    .action-column button {
+        margin-right: 5px;
+    }
+</style>
