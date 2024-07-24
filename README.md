@@ -113,6 +113,42 @@ Accessibility:
 - Integration: Ensure seamless integration with existing campus systems or future enhancements.
 
 # REQUIREMENTS FLOW
-                                       
+
+# 1. General Users (Faculty Staff, Students, and Public Visitors)
+# Browse the Website
+- Access general information about the Resource Generation Office (RGO) and available resources.
+- Login
+- User authentication system for accessing personalized features (e.g., reservations).
+
+# View Announcements
+- View announcements posted by the RGO.
+
+# Reserve Items from the RGO
+- Search and browse available items for reservation.
+- Place and manage reservations.
+
+# Reserve/Rent a Facility in the School
+- Search and browse available facilities.
+- Make and manage facility reservations.
+
+# 2. RGO Staff
+
+# Manage the POS (Point of Sale)
+- Oversee transactions and sales related to items, reserved items and facilities.
+
+# Generate Sales Report
+- Produce detailed sales reports for analysis and record-keeping.
+
+# Manage the Stocks
+- Track inventory levels and update stock information.
+
+# Manage Reservations/Rentals
+- Approve or decline reservation and rental requests.
+- Monitor reservation status and handle related communications.
+
+# Manage Announcements
+- Create, update, and remove announcements visible to general users.
+
+
 
 
