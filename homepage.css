@@ -143,6 +143,19 @@ body {
     font-weight: bold;
   }
 
+.login-btn a {
+  background: linear-gradient(to right, white, gray);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: black !important;
+  text-transform: uppercase;
+}
+
+.login-btn a:hover {
+  color: #cf1010 !important;
+  background: linear-gradient(to bottom, #fff, #e0e0e0) !important;
+}
+
   #contact {
     background-color: #cf1010;
   }
