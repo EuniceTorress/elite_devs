@@ -1,0 +1,391 @@
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;    
+}
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #800202;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}  
+
+
+/* 1st page */
+
+.home-text {
+  color: #800202;
+  font-weight: bold;
+  padding-top: 50px;
+  
+}
+
+.row {
+  padding-top: 80px;
+}
+
+
+.container-fluid {
+  padding: 60px 50px;
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+.logo-small {
+  height: 20px;
+  width: auto; 
+}
+.logo {
+  height: 100px; 
+  width: auto; 
+}
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+/* merchandise */
+
+.panel {
+  border: 1px solid #cf1010; 
+  border-radius: 10px !important;
+  transition: box-shadow 0.5s;
+  padding: 10px;
+  max-width: 300px;
+ 
+}
+
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-body p {
+  margin: 5px 0; 
+}
+
+.panel-button .btn:hover {
+  border: 1px solid #cf1010;
+  background-color: #fff !important;
+  color: #cf1010;
+}
+.panel-button h3 {
+  font-size: 24px; 
+}
+.panel-button h4 {
+  color: #aaa;
+  font-size: 12px;
+}
+.panel-button .btn {
+  margin: 10px 0; 
+  background-color: #cf1010;
+  color: #fff;
+}
+.panel-image {
+  max-width: 40%; 
+  height: auto; 
+  margin-bottom: 10px; 
+  border-radius: 10px;
+}
+
+.h2-text {
+  color: #800202;
+  font-weight: bold;
+  
+
+}
+
+.navbar-logo {
+  height: 50px; 
+  width: auto; 
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: white;
+  z-index: 9999;
+  border: 0;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  padding: 15px 0; 
+
+
+}
+.navbar li a, .navbar .navbar-brand {
+  color: black !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #cf1010 !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.text-center {
+  color: #fff;
+  font-weight: bold;
+}
+
+.login-btn a {
+background: linear-gradient(to right, white, gray);
+padding: 10px 15px;
+border-radius: 5px;
+color: black !important;
+text-transform: uppercase;
+}
+
+.login-btn a:hover {
+color: #cf1010 !important;
+background: linear-gradient(to bottom, #fff, #e0e0e0) !important;
+}
+
+#contact {
+  background-color: #cf1010;
+}
+
+#contact .row {
+  display: flex;
+  justify-content: center; 
+  color: #fff;
+}
+
+#contact .col-sm-5 {
+  text-align: center; 
+}
+
+#contact .glyphicon {
+  margin-right: 5px; 
+}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4511e;
+}
+.slideanim {visibility:hidden;}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+
+/* HOME */
+.btn-custom {
+  background: linear-gradient(to right, white, gray); 
+  color: #8b0000; 
+  border: none; 
+  border-radius: 4px; 
+  padding: 10px 20px; 
+  font-size: 18px; 
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.btn-custom:hover {
+  background: linear-gradient(to right, lightgray, darkgray); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.img-responsive {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.custom-card {
+  background-color: #000;
+  color: #fff; 
+}
+
+.custom-card .card-title,
+.custom-card .card-text {
+  color: #fff; 
+}
+
+
+.text-h2 {
+  color: #800202; 
+  font-weight: bold;
+}
+
+.custom-card {
+  background-color: #000; 
+  color: #fff; 
+}
+
+.custom-card .card-title,
+.custom-card .card-text {
+  color: #fff; 
+}
+
+.text-h2 {
+  color: #800202; 
+  font-weight: bold;
+}
+
+/* ANNOUNCEMENT*/
+.card {
+  border: none; 
+  margin: 15px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow: hidden; 
+  width: 300px; 
+  height: 350px; 
+  margin: 15px auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative; 
+  
+}
+
+.card-title {
+color: #800202;
+transition: color 0.3s;
+margin-top: 5px; 
+padding-top: 5px; 
+font-family: 'Lato';
+font-weight: bold;
+
+} 
+
+.card:hover .card-title {
+color: #fff;
+}
+
+.card:hover {
+  background: #cf1010;
+}
+
+.card-img-top {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px; 
+  transition: transform 0.3s ease; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.card:hover .card-img-top {
+  transform: translateX(-50%) scale(1.2); 
+}
+
+.card-body {
+  text-align: center; 
+  margin-top: 70%; 
+}
+
+
+/* ONE PLACE FOR EVERYTHING*/
+.card-2 {
+  border: none; 
+  margin: 15px;
+  border: none; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow: hidden; 
+  width: 300px; 
+  height: 250px; 
+  margin: 15px auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.card-text {
+  color: #000;
+  transition: color 0.3s; 
+}
+.card-text:hover {
+color: #fff;
+
+}
+
+.card-body-2 {
+  text-align: center; 
+}
+
+.card-2:hover {
+  background: #cf1010; 
+  color: white; 
+}
+
+.card-h1 {
+color: #800202;
+transition: color 0.3s; 
+}
+
+.card-2:hover .card-h1 {
+color: white; 
+}
+.card-2-img-top {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%; 
+  margin: 10px auto; 
+  display: block; 
+}
+
+.card-h1 {
+  color: #800202;
+}
+
+
+
