@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo img {
+    border-radius: 50px;
+    width: 50px;
+    height: auto;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav .btn-danger {
+    border-radius: 10px;
+}
+#nav .btn-danger a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link {
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.dropdown .btn {
+    border: none !important;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px 1px #cacaca7d;
+    margin-right: 25px;
+}
+
+.dropdown .btn a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
+
+#home {
+    background-image: url(./img/homepage-webslider-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .btn-danger {
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.home-bg {
+    background: linear-gradient(to right, rgba(85, 0, 0, 0.689), rgba(0, 0, 0, 0.695), rgba(0, 0, 0, 0.525));
+}
+
+.box {
+    width: 90%;
+    border-radius: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 5px 1px #000000d3;
+}
+
+#home h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#home h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+
+
+#Highlight-Section {
+    background-color: whitesmoke;
+}
+
+
+
+#Highlight-Section h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Merchandise-Browse {
+    background-color: whitesmoke;
+}
+
+.Merchandise-Browse .card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px 1px #8686869a;
+}
+
+.Merchandise-Browse .card-title h1 {
+    font-size: 20px;
+}
+
+.Merchandise-Browse .card:hover {
+    transition: ease-in-out;
+    box-shadow: 1px 1px 10px 1px #cacaca7d;
+}
+
+
+
+
+
+#Announcement {
+    background-color: whitesmoke;
+}
+
+#Announcement h4 {
+    font-weight: bold;
+}
+
+.slide {
+    max-width: 100%;
+}
+
+.carousel-item img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+#Reservation {
+    background-color: rgb(255, 255, 255);
+}
+
+#Reservation h4 {
+    font-weight: bold;
+
+}
+
+.reserve-image img {
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 170%;
+    height: auto;
+}
+
+.Reservation-cont {
+    background-color: rgba(255, 255, 255, 0.64);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px #cacaca7d;
+}
+
+
+
+
+
+
+#Reserve {
+    background-color: whitesmoke;
+}
+
+#Reserve h4 {
+    font-weight: bold;
+}
+
+#Reserve p {
+    width: 70%;
+}
+
+#Reserve .card,
+#Reserve .card img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #cacaca7d;
+}
+
+#Reserve .card {
+    width: 100%;
+    height: auto;
+
+}
+
+#Reserve button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#Grad-year-selling .card {
+    width: 420px;
+    height: 500px;
+}
+
+#Grad-year-selling .card img {
+    width: 100%;
+    height: 100%;
+}
+
+#Grad-year-selling {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: white;
+}
+
+header h1 {
+    color: #000;
+}
+
+header p {
+    color: #000;
+}
+
+#yearbook .card {
+    width: 100%;
+    height: 550px;
+}
+
+
+
+
+
+
+
+
+#Yearbook .Fill-up {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #cacaca7d;
+}
+
+#Yearbook p {
+    width: 50%;
+}
+
+.first-pic img {
+    position: relative;
+    width: 70%;
+    margin-bottom: -5%;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 1px 10px 20px 1px #0000007d;
+    rotate: -6deg;
+}
+
+.sec-pic img {
+    border-radius: 10px;
+    position: absolute;
+    width: 38%;
+    margin-top: -22%;
+    margin-left: 20%;
+    box-shadow: 1px 10px 20px 1px #0000007d;
+    rotate: 5deg;
+}
+
+
+
+
+#Staffs {
+    background-color: whitesmoke;
+}
+
+
+#Staffs .card img{
+    width: 70%;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(255, 255, 255);
+}
+
+footer p,
+footer h5,
+.list-unstyled li {
+    color: rgb(0, 0, 0);
+}
