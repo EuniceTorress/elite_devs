@@ -292,7 +292,7 @@
     <style>
         body {
             background-color: whitesmoke;
-            /* Background similar to the image */
+           
         }
 
         .form-container {
@@ -315,10 +315,8 @@
 
     <div class="frm">
         <div class="container">
-            <div class="container my-5">
-                <!-- Form Container -->
-                <div class="form-container p-4 ">
-                    <!-- Facility/ies to be Rented Section -->
+            <div class="container my-5">        
+                <div class="form-container p-4 ">               
                     <div class="section-header">Facility/ies to be Rented</div>
                     <button class="btn btn-primary btn-add-facility mb-3">Add more</button>
                     <button class="btn btn-danger btn-del mb-3"><i class="fa-regular fa-trash-can"></i></button>
@@ -683,7 +681,6 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Add Event Listeners
             document.querySelector('.btn-add-facility').addEventListener('click', addFacilityRow);
             document.querySelector('.btn-add-manpower').addEventListener('click', addManpowerRow);
             document.querySelector('.btn-del').addEventListener('click', deleteLastRows);
@@ -741,8 +738,6 @@
 
             function deleteLastRows() {
                 const facilityRows = document.getElementById('facility-rows');
-                
-                // Remove last facility row if exists
                 if (facilityRows.lastChild) {
                     facilityRows.removeChild(facilityRows.lastChild);
                 }
@@ -751,8 +746,6 @@
             function deleteLastRow() {
                
                 const manpowerRows = document.getElementById('manpower-rows');
-               
-                // Remove last manpower row if exists
                 if (manpowerRows.lastChild) {
                     manpowerRows.removeChild(manpowerRows.lastChild);
                 }
