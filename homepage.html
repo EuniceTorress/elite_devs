@@ -288,6 +288,102 @@
 
 
 
+
+    <style>
+        body {
+            background-color: whitesmoke;
+            /* Background similar to the image */
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 10px;
+        }
+    </style>
+
+    <div class="frm">
+        <div class="container">
+            <div class="container my-5">
+                <!-- Form Container -->
+                <div class="form-container p-4 ">
+                    <!-- Facility/ies to be Rented Section -->
+                    <div class="section-header">Facility/ies to be Rented</div>
+                    <button class="btn btn-primary btn-add-facility mb-3">Add more</button>
+                    <button class="btn btn-danger btn-del mb-3"><i class="fa-regular fa-trash-can"></i></button>
+                    <form id="facility-form">
+                        <div id="facility-rows">
+                            <div class="row g-3 facility-row">
+                                <div class="col-md-3">
+                                    <label for="facility" class="form-label">Facilities:</label>
+                                    <input type="text" class="form-control" name="facility[]"
+                                        placeholder="Select Facility">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="hours" class="form-label">No. of Hours:</label>
+                                    <input type="number" class="form-control" name="hours[]" placeholder="Enter hours">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cost" class="form-label">Cost:</label>
+                                    <input type="text" class="form-control" name="cost[]" placeholder="Enter cost">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="total-cost" class="form-label">Total Cost:</label>
+                                    <input type="text" class="form-control" name="total-cost[]"
+                                        placeholder="Total cost">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="section-header mt-3">Manpower Required</div>
+                    <button class="btn btn-primary btn-add-manpower">Add more</button>
+                    <button class="btn btn-danger btn-dels"><i class="fa-regular fa-trash-can"></i></button>
+                    <form id="manpower-form">
+                        <div id="manpower-rows">
+                            <div class="row g-3 manpower-row">
+                                <div class="col-md-3">
+                                    <label for="manpower" class="form-label">Manpower:</label>
+                                    <input type="text" class="form-control" name="manpower[]"
+                                        placeholder="Select Manpower">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="man-hours" class="form-label">No. of Hours:</label>
+                                    <input type="number" class="form-control" name="man-hours[]"
+                                        placeholder="Enter hours">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="man-cost" class="form-label">Cost:</label>
+                                    <input type="text" class="form-control" name="man-cost[]" placeholder="Enter cost">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="man-total-cost" class="form-label">Total Cost:</label>
+                                    <input type="text" class="form-control" name="man-total-cost[]"
+                                        placeholder="Total cost">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <div id="Grad-year-selling" class="py-3 pt-5">
         <header class="text-center py-5 pt-5">
             <h1 class="display-4">Graduation Pictures & Yearbook 2024</h1>
@@ -468,7 +564,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
         </div>
@@ -584,6 +680,87 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.6/index.global.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Add Event Listeners
+            document.querySelector('.btn-add-facility').addEventListener('click', addFacilityRow);
+            document.querySelector('.btn-add-manpower').addEventListener('click', addManpowerRow);
+            document.querySelector('.btn-del').addEventListener('click', deleteLastRows);
+            document.querySelector('.btn-dels').addEventListener('click', deleteLastRow);
+
+            function addFacilityRow() {
+                const facilityRows = document.getElementById('facility-rows');
+                const newRow = document.createElement('div');
+                newRow.className = 'row g-3 facility-row';
+                newRow.innerHTML = `
+            <div class="col-md-3">
+                <label for="facility" class="form-label">Facilities:</label>
+                <input type="text" class="form-control" name="facility[]" placeholder="Select Facility">
+            </div>
+            <div class="col-md-3">
+                <label for="hours" class="form-label">No. of Hours:</label>
+                <input type="number" class="form-control" name="hours[]" placeholder="Enter hours">
+            </div>
+            <div class="col-md-3">
+                <label for="cost" class="form-label">Cost:</label>
+                <input type="text" class="form-control" name="cost[]" placeholder="Enter cost">
+            </div>
+            <div class="col-md-3">
+                <label for="total-cost" class="form-label">Total Cost:</label>
+                <input type="text" class="form-control" name="total-cost[]" placeholder="Total cost">
+            </div>
+        `;
+                facilityRows.appendChild(newRow);
+            }
+
+            function addManpowerRow() {
+                const manpowerRows = document.getElementById('manpower-rows');
+                const newRow = document.createElement('div');
+                newRow.className = 'row g-3 manpower-row';
+                newRow.innerHTML = `
+            <div class="col-md-3">
+                <label for="manpower" class="form-label">Manpower:</label>
+                <input type="text" class="form-control" name="manpower[]" placeholder="Select Manpower">
+            </div>
+            <div class="col-md-3">
+                <label for="man-hours" class="form-label">No. of Hours:</label>
+                <input type="number" class="form-control" name="man-hours[]" placeholder="Enter hours">
+            </div>
+            <div class="col-md-3">
+                <label for="man-cost" class="form-label">Cost:</label>
+                <input type="text" class="form-control" name="man-cost[]" placeholder="Enter cost">
+            </div>
+            <div class="col-md-3">
+                <label for="man-total-cost" class="form-label">Total Cost:</label>
+                <input type="text" class="form-control" name="man-total-cost[]" placeholder="Total cost">
+            </div>
+        `;
+                manpowerRows.appendChild(newRow);
+            }
+
+            function deleteLastRows() {
+                const facilityRows = document.getElementById('facility-rows');
+                
+                // Remove last facility row if exists
+                if (facilityRows.lastChild) {
+                    facilityRows.removeChild(facilityRows.lastChild);
+                }
+               
+            }
+            function deleteLastRow() {
+               
+                const manpowerRows = document.getElementById('manpower-rows');
+               
+                // Remove last manpower row if exists
+                if (manpowerRows.lastChild) {
+                    manpowerRows.removeChild(manpowerRows.lastChild);
+                }
+            }
+        });
+
+    </script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('calendar');
