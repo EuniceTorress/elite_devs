@@ -292,7 +292,7 @@
     <style>
         body {
             background-color: whitesmoke;
-           
+
         }
 
         .form-container {
@@ -311,35 +311,51 @@
         .form-control {
             border-radius: 10px;
         }
+
+        .cost-boxs {
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.296);
+        }
+
+        .total-cost-boxs {
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.296);
+        }
+        .cost-box {
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.296);
+        }
+
+        .total-cost-box {
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.296);
+        }
     </style>
 
     <div class="frm">
         <div class="container">
-            <div class="container my-5">        
-                <div class="form-container p-4 ">               
+            <div class="container my-5">
+                <div class="form-container p-4 ">
                     <div class="section-header">Facility/ies to be Rented</div>
-                    <button class="btn btn-primary btn-add-facility mb-3">Add more</button>
-                    <button class="btn btn-danger btn-del mb-3"><i class="fa-regular fa-trash-can"></i></button>
                     <form id="facility-form">
                         <div id="facility-rows">
                             <div class="row g-3 facility-row">
                                 <div class="col-md-3">
                                     <label for="facility" class="form-label">Facilities:</label>
                                     <input type="text" class="form-control" name="facility[]"
-                                        placeholder="Select Facility">
+                                        placeholder="Facility">
                                 </div>
                                 <div class="col-md-3">
                                     <label for="hours" class="form-label">No. of Hours:</label>
                                     <input type="number" class="form-control" name="hours[]" placeholder="Enter hours">
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 text-center  pt-1">
                                     <label for="cost" class="form-label">Cost:</label>
-                                    <input type="text" class="form-control" name="cost[]" placeholder="Enter cost">
+                                    <div class="cost-boxs p-1">15000 php</div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 text-center  pt-1">
                                     <label for="total-cost" class="form-label">Total Cost:</label>
-                                    <input type="text" class="form-control" name="total-cost[]"
-                                        placeholder="Total cost">
+                                    <div class="total-cost-boxs p-1">400000 php</div>
                                 </div>
                             </div>
                         </div>
@@ -361,17 +377,19 @@
                                     <input type="number" class="form-control" name="man-hours[]"
                                         placeholder="Enter hours">
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 text-center  pt-1">
                                     <label for="man-cost" class="form-label">Cost:</label>
-                                    <input type="text" class="form-control" name="man-cost[]" placeholder="Enter cost">
+                                    <div class="cost-box p-1">12000 php</div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 text-center  pt-1">
                                     <label for="man-total-cost" class="form-label">Total Cost:</label>
-                                    <input type="text" class="form-control" name="man-total-cost[]"
-                                        placeholder="Total cost">
+                                    <div class="total-cost-box p-1">100000 php</div>
                                 </div>
                             </div>
                         </div>
+                       <div class="d-flex justify-content-center align-items-center p-3">
+                            <button class="btn btn-success ms-auto">Submit</button>
+                       </div>
                     </form>
                 </div>
             </div>
@@ -681,35 +699,9 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector('.btn-add-facility').addEventListener('click', addFacilityRow);
             document.querySelector('.btn-add-manpower').addEventListener('click', addManpowerRow);
-            document.querySelector('.btn-del').addEventListener('click', deleteLastRows);
             document.querySelector('.btn-dels').addEventListener('click', deleteLastRow);
 
-            function addFacilityRow() {
-                const facilityRows = document.getElementById('facility-rows');
-                const newRow = document.createElement('div');
-                newRow.className = 'row g-3 facility-row';
-                newRow.innerHTML = `
-            <div class="col-md-3">
-                <label for="facility" class="form-label">Facilities:</label>
-                <input type="text" class="form-control" name="facility[]" placeholder="Select Facility">
-            </div>
-            <div class="col-md-3">
-                <label for="hours" class="form-label">No. of Hours:</label>
-                <input type="number" class="form-control" name="hours[]" placeholder="Enter hours">
-            </div>
-            <div class="col-md-3">
-                <label for="cost" class="form-label">Cost:</label>
-                <input type="text" class="form-control" name="cost[]" placeholder="Enter cost">
-            </div>
-            <div class="col-md-3">
-                <label for="total-cost" class="form-label">Total Cost:</label>
-                <input type="text" class="form-control" name="total-cost[]" placeholder="Total cost">
-            </div>
-        `;
-                facilityRows.appendChild(newRow);
-            }
 
             function addManpowerRow() {
                 const manpowerRows = document.getElementById('manpower-rows');
@@ -724,13 +716,13 @@
                 <label for="man-hours" class="form-label">No. of Hours:</label>
                 <input type="number" class="form-control" name="man-hours[]" placeholder="Enter hours">
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 text-center  pt-1">
                 <label for="man-cost" class="form-label">Cost:</label>
-                <input type="text" class="form-control" name="man-cost[]" placeholder="Enter cost">
+                <div class="cost-box p-1">12000 php</div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 text-center  pt-1">
                 <label for="man-total-cost" class="form-label">Total Cost:</label>
-                <input type="text" class="form-control" name="man-total-cost[]" placeholder="Total cost">
+                <div class="total-cost-box p-1">100000 php</div>
             </div>
         `;
                 manpowerRows.appendChild(newRow);
@@ -741,10 +733,10 @@
                 if (facilityRows.lastChild) {
                     facilityRows.removeChild(facilityRows.lastChild);
                 }
-               
+
             }
             function deleteLastRow() {
-               
+
                 const manpowerRows = document.getElementById('manpower-rows');
                 if (manpowerRows.lastChild) {
                     manpowerRows.removeChild(manpowerRows.lastChild);

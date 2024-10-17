@@ -239,7 +239,9 @@ header p {
 
 
 
-
+#Yearbook{
+    background-color: rgb(255, 255, 255);
+}
 
 #Yearbook .Fill-up {
     background-color: whitesmoke;
