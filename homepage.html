@@ -330,6 +330,10 @@
             border-radius: 10px;
             border: 1px solid rgba(128, 128, 128, 0.296);
         }
+        .drop button{
+            border-radius: 10px;
+            width: 290px;
+        }
     </style>
 
     <div class="frm">
@@ -369,8 +373,16 @@
                             <div class="row g-3 manpower-row">
                                 <div class="col-md-3">
                                     <label for="manpower" class="form-label">Manpower:</label>
-                                    <input type="text" class="form-control" name="manpower[]"
-                                        placeholder="Select Manpower">
+                                        <div class="dropdown drop">
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <a href="#Grad-year-selling">Man Power 1</a>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#Grad-year-selling">Man Power 2</a></li>
+                                                <li><a class="dropdown-item" href="#Yearbook">Man Power 3</a></li>
+                                            </ul>
+                                        </div>
                                 </div>
                                 <div class="col-md-3">
                                     <label for="man-hours" class="form-label">No. of Hours:</label>
@@ -710,7 +722,16 @@
                 newRow.innerHTML = `
             <div class="col-md-3">
                 <label for="manpower" class="form-label">Manpower:</label>
-                <input type="text" class="form-control" name="manpower[]" placeholder="Select Manpower">
+                <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <a href="#Grad-year-selling">Man Power 1</a>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Grad-year-selling">Man Power 2</a></li>
+                            <li><a class="dropdown-item" href="#Yearbook">Man Power 3</a></li>
+                        </ul>
+                    </div>
             </div>
             <div class="col-md-3">
                 <label for="man-hours" class="form-label">No. of Hours:</label>
