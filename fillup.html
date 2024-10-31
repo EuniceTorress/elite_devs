@@ -17,7 +17,9 @@
         border-radius: 10px;
         box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.1);
     }
-
+    label{
+        font-weight: bold;
+    }
     .btn {
         border: 2px solid rgba(168, 168, 168, 0.414);
     }
@@ -40,26 +42,36 @@
         width: 70%;
         height: auto;
     }
-    .info h6 span{
-        font-size: 15px;
+
+    .up {
+        margin-left: 50px;
+        margin-top: 10px;
+        
+    }
+
+    .up .dropdown a {
+        color: #000000;
+        text-decoration: none;
     }
     @media (max-width: 500px) {
-      .info-cont{
-        flex-direction: column-reverse;
-      }
-      .info{
-        margin-left: 0 !important;
-        margin-top: 10px;
-      }
-      .card {
-        margin-left: 0 !important;
-        width: 100%;
-        height: 212px;
-    }
-    .card img {
-        width: 65%;
-        height: auto;
-    }
+        .card {
+            margin-left: 0 !important;
+            width: 100%;
+            height: 212px;
+        }
+
+        .card img {
+            width: 65%;
+            height: auto;
+        }
+
+        .info-cont {
+            flex-direction: column;
+        }
+
+        .up {
+            margin-top: 20px;
+        }
     }
 </style>
 
@@ -67,20 +79,8 @@
 
     <div class="container p-2">
         <div class="signup">
-            <form class="p-5">
-                <h4 class="fw-bold text-center">SIGN UP</h4>
-                <div class="dropdown text-end">
-                    <button class="btn dropdown-toggle mb-3" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Role
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">RGO Staff</a></li>
-                        <li><a class="dropdown-item" href="#">Student</a></li>
-                        <li><a class="dropdown-item" href="#">facilitator</a></li>
-                        <li><a class="dropdown-item" href="#">Guest</a></li>
-                    </ul>
-                </div>
+            <form class="px-5 pb-5">
+                <h4 class="fw-bold text-center p-5">SIGN UP</h4>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="mb-3 text-center">
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="mb-3">
+                        <div class="mb-3 text-center">
                             <label for="birthdate" class="form-label">Birthdate</label>
                             <input type="date" class="form-control" id="birthdate" name="birthdate"
                                 placeholder="DD/MM/YYYY">
@@ -138,26 +138,28 @@
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                             <div class="buttons d-flex justify-content-between align-items-center mt-3">
-                                <button type="button" class="btn btn-danger"><a href="">Back</a></button>
+                                <button type="button" class="btn btn-danger"><a href="homepage.html">Back</a></button>
                                 <button type="button" class="btn btn-success"><a href="">Submit</a></button>
                             </div>
                         </div>
                     </div>
                     <div class="info-cont col-lg-6 mt-3 d-flex">
-                        <div class="info d-flex flex-column justify-content-center mx-4">
-                            <h5 class="text-center">IMPORTANT INFO</h5>
-                            <h6>First Name: <span>Jhon Doe</span></h6>
-                            <h6>Middle Name: <span>Kit</span></h6>
-                            <h6>Last Name: <span>Kat</span></h6>
-                            <h6>Contact Number: <span>+63-987-233-5442</span></h6>
-                            <h6>Birth Day: <span>19/02/1998</span></h6>
-                            <h6>User Name: <span>JDoe</span></h6>
-                        </div>
                         <div class="card pt-3">
                             <center>
                                 <img src="./img/1e99fbaeb36fc3a43d504986f781aeed.jpg" class="card-img-right"
                                     alt="Card Image">
                             </center>
+                        </div>
+                        <div class="up">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="">Upload Photo</a>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Browse Image</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
