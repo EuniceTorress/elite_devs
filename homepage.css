@@ -17,14 +17,14 @@
     background-color: rgb(255, 255, 255);
 }
 
-#nav .btn-danger {
-    border-radius: 10px;
-}
 #nav .btn-danger a{
     text-decoration: none;
     color: white;
 }
-
+.nav-item button a{
+    text-decoration: none;
+    color: rgb(190, 0, 0);
+}
 .nav-link {
     margin-right: 20px;
     font-size: 15px;
@@ -55,11 +55,11 @@
     background-size: cover;
 }
 
-#home .btn-danger {
+#home .btn-outline-danger {
     border-radius: 10px;
     font-size: 20px;
 }
-#home .btn-danger a{
+#home .btn-outline-danger a{
     color: #ffffff;
     text-decoration: none;
 }
