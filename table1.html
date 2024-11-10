@@ -9,15 +9,27 @@
 </head>
 
 <body>
-
-
     <style>
-        .table1 th{
+        .table1 th {
             text-align: center;
+        }
+        
+        .extension-table th, .extension-table td {
+            text-align: center;
+        }
+        
+        button a {
+            text-decoration: none;
+        }
+        
+        /* Adjust font-size for smaller screens */
+        @media (max-width: 576px) {
+            .text-center h5, .text-center p {
+                font-size: 14px;
+            }
         }
     </style>
 
-    
     <div class="container mt-5">
         <div class="text-center mb-4">
             <h5>REPORT OF MERCHANDISE RELEASED</h5>
@@ -26,73 +38,60 @@
             <p>No.: 2024.11.01<br>November 04, 2024</p>
         </div>
 
-        <table class="table table-bordered table1">
-            <thead>
-                <tr>
-                    <td colspan="6" class="text-center fst-italic">To be filled by up Resource Generation Office</td>
-                    <td colspan="2" class="text-center fst-italic">To be filled by up Accounting Division/Unit</td>
-                </tr>
-                <tr>
-                    <th scope="col">OR No.</th>
-                    <th scope="col">Responsibility</th>
-                    <th scope="col">Stock No.</th>
-                    <th scope="col">Item</th>
-                    <th scope="col">Unit</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Unit Cost</th>
-                    <th scope="col">Amount</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>251724</td>
-                    <td>IGP</td>
-                    <td>RGO-23.07.001</td>
-                    <td>Collar Pin TNEU</td>
-                    <td>pc</td>
-                    <td>14</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>251724</td>
-                    <td>IGP</td>
-                    <td>RGO-24.06.001</td>
-                    <td>ID Lace with protector</td>
-                    <td>pc</td>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>251724</td>
-                    <td>IGP</td>
-                    <td>RGO-23.17.002</td>
-                    <td>ROTC Cap</td>
-                    <td>pc</td>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-bordered table1">
+                <thead>
+                    <tr>
+                        <td colspan="6" class="text-center fst-italic">To be filled by up Resource Generation Office</td>
+                        <td colspan="2" class="text-center fst-italic">To be filled by up Accounting Division/Unit</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">OR No.</th>
+                        <th scope="col">Responsibility</th>
+                        <th scope="col">Stock No.</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Unit</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Unit Cost</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>251724</td>
+                        <td>IGP</td>
+                        <td>RGO-23.07.001</td>
+                        <td>Collar Pin TNEU</td>
+                        <td>pc</td>
+                        <td>14</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>251724</td>
+                        <td>IGP</td>
+                        <td>RGO-24.06.001</td>
+                        <td>ID Lace with protector</td>
+                        <td>pc</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>251724</td>
+                        <td>IGP</td>
+                        <td>RGO-23.17.002</td>
+                        <td>ROTC Cap</td>
+                        <td>pc</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-
-
-        <style>
-            .extension-table th{
-                text-align: center;
-            }
-            .extension-table td{
-                text-align: center;
-            }
-            button a{
-                text-decoration: none;
-            }
-        </style>
-
-
-        <div class="mt-4">
+        <div class="mt-4 table-responsive">
             <table class="table table-bordered extension-table">
                 <thead>
                     <tr>
@@ -105,7 +104,6 @@
                         <th scope="col">Unit Cost</th>
                         <th scope="col">Total Cost</th>
                         <th scope="col">Object Code</th>
-
                     </tr>
                 </thead>
                 <tbody>
@@ -114,10 +112,12 @@
                         <td>4</td>
                         <td></td>
                         <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>RGO-23.07.001</td>
                         <td>14</td>
+                        <td></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -126,41 +126,34 @@
                         <td>4</td>
                         <td></td>
                         <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="row mt-5">
-            <div class="col text-center">
+            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
                 <p>Prepared by:</p>
                 <p class="fw-bold">PAMELA MARIE B. BAUYON</p>
                 <p>Admin Aide VI</p>
             </div>
-            <div class="col text-center">
+            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
                 <p>I hereby certify to the correctness of the above information.</p>
                 <p class="fw-bold">MONALIZA C. COPRIO</p>
                 <p>Head, Resource Generation Office</p>
             </div>
-            <div class="col text-center">
+            <div class="col-12 col-md-4 text-center">
                 <p>Checked by:</p>
                 <p class="fw-bold">SHYRA H. SEMINIANO</p>
                 <p>Accounting Staff</p>
             </div>
         </div>
+
         <div class="d-grid p-5">
             <button class="btn btn-outline-primary"><a href="table2.html">Table2</a></button>
         </div>
     </div>
-
-
-
-
-
-    
-
-
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
