@@ -111,16 +111,79 @@
                         <td>640.00</td>
                         <td>900.00</td>
                     </tr>
-                    <!-- Add more rows as needed -->
                 </tbody>
             </table>
         </div>
 
-        <div class="d-grid p-5">
-            <button class="btn btn-outline-primary"><a href="table1.html">Back</a></button>
+
+
+        <style>
+            .span1,
+            .span2,
+            .span3 {
+                position: absolute;
+                rotate: 180deg;
+                width: 210px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+            .nm1,
+            .nm2,
+            .nm3 {
+                position: absolute;
+                margin-top: 100px;
+            }
+
+            .mrg {
+                position: relative;
+            }
+
+            @media (max-width: 576px) {
+
+                .span1,
+                .span2,
+                .span3 {
+                    position: absolute;
+                    rotate: 180deg;
+                    width: 150px;
+                    border: 1px solid rgb(0, 0, 0);
+                }
+
+                .mrg {
+                    font-size: 10px;
+                }
+
+                .nm1,
+                .nm2,
+                .nm3 {
+                    position: absolute;
+                    font-size: 10px;
+                    margin-top: 60px;
+                }
+            }
+        </style>
+
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-4 text-center d-flex flex-column justify-content-center align-items-center">
+                <span class="span1 mb-3"></span>
+                <p class="fw-bold mt-4 mrg">PAMELA MARIE B. BAUYON</p>
+                <p class="nm1">Admin Aide VI</p>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center d-flex flex-column justify-content-center align-items-center">
+                <span class="span2 mb-3"></span>
+                <p class="fw-bold mt-4 mrg">MONALIZA C. COPRIO</p>
+                <p class="nm2">Head, Resource Generation Office</p>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center d-flex flex-column justify-content-center align-items-center">
+                <span class="span3 mb-3"></span>
+                <p class="fw-bold mt-4 mrg">SHYRA H. SEMINIANO</p>
+                <p class="nm3">Accounting Staff</p>
+            </div>
         </div>
     </div>
-
+    <div class="d-grid p-5">
+        <button class="btn btn-outline-primary"><a href="table1.html">Back</a></button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
