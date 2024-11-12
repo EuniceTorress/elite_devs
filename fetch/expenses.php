@@ -1,0 +1,32 @@
+<?php
+header('Content-Type: application/json');
+include '../connection.php';  
+
+$sql = "SELECT id, `name` AS `manpower`, price, status AS `available` FROM manpower";
+$result = $conn->query($sql);
+
+$manpower = [];
+
+if ($conn->connect_error) {
+    echo json_encode(['error' => 'Connection failed: ' . $conn->connect_error]);
+    exit();
+}
+
+if (!$result) {
+    echo json_encode(['error' => 'SQL Error: ' . $conn->error]);
+    exit();
+}
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $manpower[] = $row;
+    }
+} else {
+    echo json_encode([]);  
+    exit();
+}
+
+$conn->close(); 
+
+echo json_encode($manpower);
+?>
