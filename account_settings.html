@@ -20,10 +20,12 @@
         }
 
         #fileInput {
+            z-index: -1;
+            position: absolute;
             display: none;
         }
 
-        .custom-file-label {      
+        .custom-file-label {
             background-color: rgb(184, 0, 0);
             color: rgb(255, 255, 255);
             font-size: 15px;
@@ -35,7 +37,6 @@
 
 
         .sidebar {
-            width: 250px;
             background-color: #f7f9fc;
             text-align: center;
         }
@@ -51,7 +52,7 @@
         .sidebar h5 {
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin: 10px 10px;
         }
 
         .sidebar a {
@@ -102,6 +103,48 @@
         #fileInput {
             display: none;
         }
+
+        .Al-cont {
+            max-width: 1000px;
+        }
+
+        .Al-cont button a {
+            text-decoration: none;
+            color: rgb(138, 0, 0);
+        }
+
+        @media (max-width: 576px) {
+            .sidebar {
+                background-color: #333;
+            }
+            #fileInput {
+                z-index: -1;
+                position: absolute;
+                margin-top: 15px;
+                padding: 20px;
+            }
+
+            .accset {
+                display: flex;
+                flex-direction: column-reverse;
+
+            }
+
+            #fileInput {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .Al-cont {
+                overflow-x: auto;
+            }
+
+            .summary .imm {
+                width: 100px;
+                margin-left: -30px;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
@@ -110,11 +153,12 @@
 
     <div class="account-settings-container p-4">
         <div class="container p-0 accset">
-            <div class="sidebar d-flex justify-content-between flex-column py-5 p-2">
+            <div class="sidebar d-flex justify-content-between flex-column py-5 p-5">
                 <div>
                     <img src="./img/1e99fbaeb36fc3a43d504986f781aeed.jpg" alt="Profile Picture">
                     <h5>Ryan Gosling</h5>
-                    <label for="fileInput" class="custom-file-label p-1">Upload Photo <i class="fa-solid fa-circle-up"></i></label>
+                    <label for="fileInput" class="custom-file-label p-1">Upload Photo <i
+                            class="fa-solid fa-circle-up"></i></label>
                     <input type="file" id="fileInput">
                 </div>
                 <div class="bt">
@@ -163,7 +207,7 @@
             </div>
         </div>
     </div>
-    <div class="cp">
+    <div class="cp p-3">
         <div class="container cpass p-4">
             <h4>Cange Password <i class="fa-solid fa-lock"></i></h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, dolor necessitatibus, fuga alias obcaecati
@@ -176,13 +220,65 @@
     </div>
     <div class="Aclog p-3">
         <div class="container acclogs p-4">
-            <h4>Activities <i class="fa-regular fa-clock"></i></h4>
+            <h4>Activity logs <i class="fa-regular fa-clock"></i></h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, dolor necessitatibus, fuga alias obcaecati
                 ad unde delectus et expedita earum quas omnis hic minus illo architecto facilis, perspiciatis
                 praesentium molestiae.</p>
-            <div class="d-grid">
-                <button type="button" class="btn btn-outline-primary"><a href="activitylog.html">Activity
-                        logs</a></button>
+            <div class="container Al-cont p-0">
+                <table class="table">
+                    <thead class="table-danger table-responsive">
+                        <tr>
+                            <th scope="col">Sr-code</th>
+                            <th scope="col">
+                                <div class="dropdown">
+                                    <a class="btn btn-anger btn-sm dropdown-toggle fw-bold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Admin
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Student</a></li>
+                                        <li><a class="dropdown-item" href="#">Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Facilitator</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Date Log-in</th>
+                            <th scope="col">Date Log-out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">20-70663</th>
+                            <td>Admin</td>
+                            <td>Otto</td>
+                            <td>12/23/2021</td>
+                            <td>03/19/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20-70223</th>
+                            <td>Staff</td>
+                            <td>Hakdog</td>
+                            <td>08/14/2022</td>
+                            <td>03/25/2024</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20-71263</th>
+                            <td>Student</td>
+                            <td>Happy</td>
+                            <td>01/26/2019</td>
+                            <td>03/20/2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20-75263</th>
+                            <td>Student</td>
+                            <td>Kwek Kwek</td>
+                            <td>01/26/2019</td>
+                            <td>03/20/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
