@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .accset {
-            max-width: 800px;
+            width: 98vw;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -83,14 +83,14 @@
         }
 
         .cpass {
-            max-width: 800px;
+            width: 98vw;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .acclogs {
-            max-width: 800px;
+            width: 98vw;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -105,7 +105,7 @@
         }
 
         .Al-cont {
-            max-width: 1000px;
+            max-width: 2000px;
         }
 
         .Al-cont button a {
@@ -117,6 +117,7 @@
             .sidebar {
                 background-color: #333;
             }
+
             #fileInput {
                 z-index: -1;
                 position: absolute;
@@ -148,137 +149,139 @@
     </style>
 </head>
 
-<body>
+<body> 
 
 
-    <div class="account-settings-container p-4">
-        <div class="container p-0 accset">
-            <div class="sidebar d-flex justify-content-between flex-column py-5 p-5">
-                <div>
-                    <img src="./img/1e99fbaeb36fc3a43d504986f781aeed.jpg" alt="Profile Picture">
-                    <h5>Ryan Gosling</h5>
-                    <label for="fileInput" class="custom-file-label p-1">Upload Photo <i
-                            class="fa-solid fa-circle-up"></i></label>
-                    <input type="file" id="fileInput">
-                </div>
-                <div class="bt">
-                    <a href="">Sign Out <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="form-section p-4">
-                <div class="text-end hm">
-                    <a href="homepage.html"><i class="fa-solid fa-house"></i></a>
-                </div>
-                <h3>Account Settings <i class="fa-solid fa-gear pb-2"></i></h3>
-                <form>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" value="Denver">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" value="Hakdog">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" value="Jhakdogz">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" value="******">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" value="Jden76@gmail.com">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="phone" class="form-label">Phone number</label>
-                            <input type="tel" class="form-control" id="phone" value="+63-904-857-2345">
-                        </div>
+    <div class="account-set p-2">
+        <div class="account-settings-container">
+            <div class="container-fluid p-0 accset">
+                <div class="sidebar d-flex justify-content-between flex-column py-5 p-5">
+                    <div>
+                        <img src="./img/1e99fbaeb36fc3a43d504986f781aeed.jpg" alt="Profile Picture">
+                        <h5>Ryan Gosling</h5>
+                        <label for="fileInput" class="custom-file-label p-1">Upload Photo <i
+                                class="fa-solid fa-circle-up"></i></label>
+                        <input type="file" id="fileInput">
                     </div>
-                    <div class="mt-4">
-                        <div class="d-flex justify-content-between">
-                            <button type="submit" class="btn btn-outline-primary">Save</button>
-                            <button type="button" class="btn btn-outline-danger ms-auto">Cancel</button>
-                        </div>
+                    <div class="bt">
+                        <a href="">Sign Out <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                </form>
+                </div>
+                <div class="form-section p-4">
+                    <div class="text-end hm">
+                        <a href="homepage.html"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                    <h3>Account Settings <i class="fa-solid fa-gear pb-2"></i></h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" value="Denver">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" value="Hakdog">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" value="Jhakdogz">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" value="******">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" value="Jden76@gmail.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input type="tel" class="form-control" id="phone" value="+63-904-857-2345">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-between">
+                                <button type="submit" class="btn btn-outline-primary">Save</button>
+                                <button type="button" class="btn btn-outline-danger ms-auto">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="cp p-3">
-        <div class="container cpass p-4">
-            <h4>Cange Password <i class="fa-solid fa-lock"></i></h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, dolor necessitatibus, fuga alias obcaecati
-                ad unde delectus et expedita earum quas omnis hic minus illo architecto facilis, perspiciatis
-                praesentium molestiae.</p>
-            <div class="d-grid">
-                <button type="button" class="btn btn-outline-primary">Change Password</button>
+        <div class="cp pt-2">
+            <div class="container-fluid cpass p-4">
+                <h4>Cange Password <i class="fa-solid fa-lock"></i></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, dolor necessitatibus, fuga alias obcaecati
+                    ad unde delectus et expedita earum quas omnis hic minus illo architecto facilis, perspiciatis
+                    praesentium molestiae.</p>
+                <div class="d-grid">
+                    <button type="button" class="btn btn-outline-primary">Change Password</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="Aclog p-3">
-        <div class="container acclogs p-4">
-            <h4>Activity logs <i class="fa-regular fa-clock"></i></h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, dolor necessitatibus, fuga alias obcaecati
-                ad unde delectus et expedita earum quas omnis hic minus illo architecto facilis, perspiciatis
-                praesentium molestiae.</p>
-            <div class="container Al-cont p-0">
-                <table class="table">
-                    <thead class="table-danger table-responsive">
-                        <tr>
-                            <th scope="col">Sr-code</th>
-                            <th scope="col">
-                                <div class="dropdown">
-                                    <a class="btn btn-anger btn-sm dropdown-toggle fw-bold" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Admin
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Student</a></li>
-                                        <li><a class="dropdown-item" href="#">Staff</a></li>
-                                        <li><a class="dropdown-item" href="#">Facilitator</a></li>
-                                    </ul>
-                                </div>
-                            </th>
-                            <th scope="col">User Name</th>
-                            <th scope="col">Date Log-in</th>
-                            <th scope="col">Date Log-out</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">20-70663</th>
-                            <td>Admin</td>
-                            <td>Otto</td>
-                            <td>12/23/2021</td>
-                            <td>03/19/2023</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">20-70223</th>
-                            <td>Staff</td>
-                            <td>Hakdog</td>
-                            <td>08/14/2022</td>
-                            <td>03/25/2024</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">20-71263</th>
-                            <td>Student</td>
-                            <td>Happy</td>
-                            <td>01/26/2019</td>
-                            <td>03/20/2021</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">20-75263</th>
-                            <td>Student</td>
-                            <td>Kwek Kwek</td>
-                            <td>01/26/2019</td>
-                            <td>03/20/2021</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="Aclog pt-2">
+            <div class="container-fluid acclogs p-4">
+                <h4>Activity logs <i class="fa-regular fa-clock"></i></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, dolor necessitatibus, fuga alias obcaecati
+                    ad unde delectus et expedita earum quas omnis hic minus illo architecto facilis, perspiciatis
+                    praesentium molestiae.</p>
+                <div class="container Al-cont p-0">
+                    <table class="table">
+                        <thead class="table-danger table-responsive">
+                            <tr>
+                                <th scope="col" >Sr-code</th>
+                                <th scope="col">
+                                    <div class="dropdown">
+                                        <a class="btn btn-anger btn-sm dropdown-toggle fw-bold" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Admin
+                                        </a>
+    
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Student</a></li>
+                                            <li><a class="dropdown-item" href="#">Staff</a></li>
+                                            <li><a class="dropdown-item" href="#">Facilitator</a></li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th scope="col">User Name</th>
+                                <th scope="col">Date Log-in</th>
+                                <th scope="col">Date Log-out</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">20-70663</th>
+                                <td>Admin</td>
+                                <td>Otto</td>
+                                <td>12/23/2021</td>
+                                <td>03/19/2023</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20-70223</th>
+                                <td>Staff</td>
+                                <td>Hakdog</td>
+                                <td>08/14/2022</td>
+                                <td>03/25/2024</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20-71263</th>
+                                <td>Student</td>
+                                <td>Happy</td>
+                                <td>01/26/2019</td>
+                                <td>03/20/2021</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20-75263</th>
+                                <td>Student</td>
+                                <td>Kwek Kwek</td>
+                                <td>01/26/2019</td>
+                                <td>03/20/2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
