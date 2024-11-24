@@ -69,10 +69,15 @@
 }
 
 .box {
-    width: 90%;
-    border-radius: 400px;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(45% at 50% 50%);
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 1px 1px 5px 1px #000000d3;
+}
+.box img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
 }
 
 #home h1 {
@@ -149,111 +154,135 @@
 
 
 
-#Reservation {
-    background-color: rgb(255, 255, 255);
-}
-
-#Reservation h4 {
-    font-weight: bold;
-
-}
-
-.reserve-image img {
-    margin-left: -40px;
-    margin-top: -40px;
-    width: 170%;
-    height: auto;
-}
-
-.Reservation-cont {
-    background-color: rgba(255, 255, 255, 0.64);
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px 1px #cacaca7d;
-}
-
-
-
-
-
-
-#Reserve {
-    background-color: whitesmoke;
-}
-
-#Reserve h4 {
-    font-weight: bold;
-}
-
-#Reserve p {
-    width: 70%;
-}
-
-#Reserve .card,
-#Reserve .card img {
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 1px #cacaca7d;
-}
-
-#Reserve .card {
-    width: 100%;
-    height: auto;
-
-}
-
-#Reserve button a {
-    color: white;
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-#Yearbook{
-    background-color: rgb(255, 255, 255);
-}
-header {
-    padding-bottom: 50px;
-    background-color: white;
-}
-
-header h1 {
-    color: #000;
-}
-
-header p {
+.res-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
     text-align: center;
-    color: #000000;
+}
+.res-header-bg{
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 80px 20px 70px 20px;
+}
+.res-header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.res-header h3 {
+    color: #fff;
 }
 
-#Yearbook .Fill-up {
-    background-color: whitesmoke;
+.res-header p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.feature-card-reserve {
+    height: 120px;
+    bottom: 60px;
+    transition: transform 0.3s;
+}
+
+.feature-card-reserve:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.facility-rentals-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
+    text-align: center;
+    
+}
+.facility-cont{
+    height: 300px;
+}
+.facility-rentals-bg {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 80px 20px 180px 20px;
+}
+
+.facility-rentals-header h1,
+.facility-rentals-header p {
+    color: #ffffff;
+}
+
+.facility-rentals-card img {
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 1px #cacaca7d;
+
+}
+
+.facility-rentals-card {
+    bottom: 150px;
+    transition: transform 0.3s;
+}
+.facility-rentals-card .btn-danger{
+    width: 100px;
+}
+
+.facility-rentals-card:hover {
+    transform: scale(1.02);
 }
 
 
-.first-pic img {
-    position: relative;
-    width: 70%;
-    margin-bottom: -5%;
-    margin-left: 10%;
-    border-radius: 10px;
-    box-shadow: 1px 10px 20px 1px #0000007d;
-    rotate: -6deg;
+
+
+
+.yearbook-section{
+    height: 400px;
 }
 
-.sec-pic img {
-    border-radius: 10px;
-    position: absolute;
-    width: 38%;
-    margin-top: -22%;
-    margin-left: 20%;
-    box-shadow: 1px 10px 20px 1px #0000007d;
-    rotate: 5deg;
+.yearbook-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
+    text-align: center;
 }
+
+.yearbook-header-bg {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 80px 20px 170px 20px;
+}
+
+.yearbook-header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.yearbook-header h3 {
+    color: #fff;
+}
+
+.yearbook-header p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.yearbook-card-text{
+    width: 100%;
+    height: 320px;
+    bottom: 170px;
+}
+.yearbook-gradpict {
+    background-color: #ffffffec;
+    bottom: 170px;
+    transition: transform 0.3s;
+}
+
+.yearbook-gradpict:hover {
+    transform: scale(1.01);
+}
+
+
 
 
 
@@ -263,8 +292,17 @@ header p {
 }
 
 
+#Staffs .card{
+    width: 100%;
+    transition: transform 0.3s;
+}
 #Staffs .card img{
+    object-fit: cover;
     width: 70%;
+    
+}
+#Staffs .card:hover{
+    transform: scale(1.02);
 }
 
 
