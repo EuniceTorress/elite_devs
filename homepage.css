@@ -1,0 +1,966 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    letter-spacing: 3px;
+    font-family: "Chela One", system-ui;
+    background-color: #ffffff00;
+}
+
+.navbar .nav-link {
+    color: #d71132;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+.navbar .nav-item button {
+    background-color: #d71132;
+}
+
+.navbar .nav-item button:hover {
+    background-color: #ac001d;
+    transform: scale(1.02);
+}
+
+.navbar .nav-item button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+
+
+/*HOMEPAGE*/
+.homepage {
+    background-image: url(./img/homepage-webslider-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.homepage .homepage-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.504);
+}
+
+.homepage .homepage-text .txt {
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+
+.homepage .homepage-text .txt2 {
+    font-size: 20px;
+}
+
+.homepage .homepage-text .btn {
+    letter-spacing: 3px;
+    font-family: "Chela One", system-ui;
+}
+
+
+.homepage .homepage-image {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.homepage .homepage-image img {
+    object-fit: cover;
+}
+
+
+.homepage .homepage-header h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: "Chela One", system-ui;
+}
+
+.homepage .homepage-header p {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+/*HOMEPAGE BROWSE*/
+.homepage-browse {
+    background-color: rgb(255, 227, 233);
+    padding: 15px;
+}
+
+.homepage-browse h3 {
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    font-size: 2.5rem;
+    text-shadow: 1px 2px 2px #ffffff;
+}
+
+.homepage-browse .browse-card {
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage-browse .browse-card:hover {
+    transform: scale(1.02);
+}
+
+.homepage-browse .browse-card img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.homepage-browse .browse-card .card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.homepage-browse .browse-card .card-text h5 {
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.homepage-browse .browse-card .browse-button {
+    font-size: 12px;
+    font-family: "Chela One", system-ui;
+}
+
+
+/* Responsive Design */
+@media (min-width: 576px) and (max-width: 991px) {
+    .homepage-browse h3 {
+        font-size: 2rem;
+    }
+
+    .homepage-browse .browse-card .card-text h5 {
+        font-size: 1.2rem;
+    }
+
+    .homepage-browse .browse-card .browse-button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .homepage-browse {
+        padding: 10px;
+    }
+
+    .homepage-browse h3 {
+        font-size: 1.8rem;
+    }
+
+    .homepage-browse .row .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .homepage-browse .browse-card .card-text h5 {
+        font-size: 1rem;
+    }
+
+    .homepage-browse .browse-card .browse-button {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/*HOMEPAGE ANNOUNCEMENT*/
+.hompage-announcement-section {
+    height: auto;
+    background-color: rgb(255, 227, 233);
+}
+
+.hompage-announcement-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hompage-announcement-header-bg {
+    background-color: rgba(0, 0, 0, 0.668);
+    padding: 80px 20px;
+}
+
+.hompage-announcement-header h1 {
+    font-size: 2.5rem;
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.hompage-announcement-header p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.homepage-announcement-photos .carousel {
+    max-width: 100%;
+}
+
+.homepage-announcement-photos .carousel .carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hompage-announcement-section .hompage-announcement-card {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/megap-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+
+.hompage-announcement-section .hompage-announcement-card .announcement-text h4 {
+    font-family: "Chela One", system-ui;
+}
+
+.hompage-announcement-section .hompage-announcement-card .announcement-text h5 {
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+.hompage-announcement-section .hompage-announcement-card .announcement-text h4 span {
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+
+}
+
+.hompage-announcement-section .hompage-announcement-card .announcement-text .sub-card {
+    background-color: rgba(255, 227, 233, 0.805);
+    border: none;
+    max-height: 395px;
+    overflow-x: hidden;
+}
+
+.hompage-announcement-section .hompage-announcement-card .announcement-text .sub-card p {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hompage-announcement-header h1 {
+        font-size: 2rem;
+    }
+
+    .hompage-announcement-header p {
+        font-size: 1rem;
+    }
+
+    .hompage-announcement-header-bg {
+        padding: 60px 20px;
+    }
+
+    .homepage-announcement-photos .carousel .carousel-item img {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hompage-announcement-header {
+        padding: 30px 10px;
+    }
+
+    .hompage-announcement-header-bg {
+        padding: 50px 10px;
+    }
+
+    .hompage-announcement-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .hompage-announcement-header p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-announcement-photos {
+        margin-bottom: 20px;
+    }
+
+    .hompage-announcement-header-bg {
+        padding: 40px 10px;
+    }
+
+    .hompage-announcement-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hompage-announcement-header p {
+        font-size: 0.8rem;
+    }
+
+    .hompage-announcement-card .announcement-text h4 {
+        font-size: 1.2rem;
+    }
+
+    .hompage-announcement-card .announcement-text h5 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hompage-announcement-header-bg {
+        padding: 30px 10px;
+    }
+
+    .hompage-announcement-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .hompage-announcement-header p {
+        font-size: 0.7rem;
+    }
+
+    .homepage-announcement-photos .carousel {
+        max-width: 100%;
+    }
+
+    .hompage-announcement-card .announcement-text {
+        padding: 20px;
+    }
+
+    .hompage-announcement-card .announcement-text h4 {
+        font-size: 1rem;
+    }
+
+    .hompage-announcement-card .announcement-text h5 {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*HOMEPAGE RESERVATION*/
+.reserve-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
+    text-align: center;
+}
+
+.reserve-header-bg {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 80px 20px 70px 20px;
+}
+
+.reserve-header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.reserve-header h3 {
+    color: #fff;
+}
+
+.reserve-header h1,
+.reserve-header h3 {
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.reserve-header p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.reserve-header .btn-danger {
+    font-family: "Chela One", system-ui;
+}
+
+.reserve-card {
+    background-color: #ffffff00;
+    transition: transform 0.3s;
+}
+
+.reserve-card:hover {
+    transform: scale(1.05);
+}
+
+.reserve-text {
+    background-color: rgba(255, 227, 233);
+}
+
+.reserve-text .reserve-card .card-body .reserve-card-title i {
+    font-size: 25px;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .reserve-header h1 {
+        font-size: 2rem;
+    }
+
+    .reserve-header p {
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .reserve-header-bg {
+        padding: 60px 15px 50px 15px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reserve-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .reserve-header h3 {
+        font-size: 1rem;
+    }
+
+    .reserve-header-bg {
+        padding: 50px 10px 40px 10px;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .reserve-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .reserve-header p {
+        font-size: 0.9rem;
+    }
+
+    .reserve-header h3 {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+        padding: 0 10px;
+    }
+
+    .reserve-header-bg {
+        padding: 40px 5px 30px 5px;
+    }
+}
+
+
+
+
+
+
+
+/*FACILITY-SECTION*/
+.hompahe-facility-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
+    text-align: center;
+}
+
+.hompage-facility-section {
+    height: auto;
+    background-color: rgb(255, 227, 233);
+}
+
+.hompage-facility-section .facility-rentals-card .btn {
+    font-family: "Chela One", system-ui;
+}
+
+.hompahe-facility-texts {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 80px 20px;
+}
+
+.hompahe-facility-header h1,
+.hompahe-facility-header p {
+    color: #ffffff;
+}
+
+.hompahe-facility-header h1 {
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.hompage-form-container {
+    border-radius: 5px;
+    height: auto;
+    background-color: #fffffffc;
+}
+
+.hompage-form-container h3 {
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #0000009f;
+}
+
+.hompage-form-container #facility-form label {
+    font-size: 20px;
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #ffffff9f;
+}
+
+#homepage-manpower-form .dropdown .btn a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#homepage-manpower-form label {
+    font-size: 20px;
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #ffffff9f;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hompahe-facility-texts {
+        padding: 60px 15px 50px 15px;
+    }
+
+    .hompahe-facility-header h1 {
+        font-size: 2rem;
+    }
+
+    .hompahe-facility-header p {
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .hompage-form-container {
+        padding: 20px;
+    }
+
+    .facility-rentals-card img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .hompahe-facility-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .hompahe-facility-header p {
+        font-size: 0.9rem;
+    }
+
+    .hompage-facility-section {
+        padding: 15px;
+    }
+
+    .facility-rentals-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hompahe-facility-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hompahe-facility-header p {
+        font-size: 0.8rem;
+    }
+
+    .hompage-form-container {
+        padding: 15px;
+    }
+
+    .hompahe-facility-texts {
+        padding: 40px 10px 30px 10px;
+    }
+
+    .facility-rentals-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hompage-form-container #facility-form label,
+    #homepage-manpower-form label {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+
+
+/*YEARBOOK-SECTION*/
+.hompage-yearboook {
+    height: auto;
+}
+
+.hompage-yearbook-content {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
+    text-align: center;
+}
+
+.hompage-yearbook-bg {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 80px 20px;
+}
+
+.hompage-yearbook-content h1 {
+    color: #d71132;
+    font-family: "Chela One", system-ui;
+    text-shadow: 1px 1px 0px #000000;
+    font-size: 2rem;
+}
+
+.hompage-yearbook-content p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.yearbook-section {
+    background-color: rgb(255, 227, 233);
+}
+
+.yearbook-section .yearbook-form h1 {
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+    font-size: 1.8rem;
+}
+
+.yearbook-section .yearbook-images img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px #00000059;
+}
+
+.yearbook-section .yearbook-form .form-label {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-family: "Chela One", system-ui;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #0000009f;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .hompage-yearbook-bg {
+        padding: 60px 15px;
+    }
+
+    .hompage-yearbook-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hompage-yearbook-content p {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .yearbook-section .yearbook-form h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hompage-yearbook-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hompage-yearbook-content p {
+        font-size: 0.9rem;
+    }
+
+    .yearbook-section .yearbook-form h1 {
+        font-size: 1.3rem;
+    }
+
+    .yearbook-section .yearbook-images img {
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hompage-yearbook-content p {
+        font-size: 0.8rem;
+    }
+
+    .yearbook-section .yearbook-form h1 {
+        font-size: 1.2rem;
+    }
+
+    .yearbook-section .yearbook-form .form-label {
+        font-size: 0.9rem;
+    }
+
+    .yearbook-section .yearbook-images img {
+        box-shadow: 1px 1px 5px #00000059;
+    }
+}
+
+
+
+
+
+
+/*HOMEPAGE-STAFFS*/
+.homepage-staffs {
+    height: auto;
+}
+
+.homepage-staff {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage-webslider-1.jpg);
+    text-align: center;
+}
+
+.hompage-staff-header-bg {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 80px 20px;
+}
+
+.homepage-staff h1 {
+    color: #d71132;
+    font-family: "Chela One", system-ui;
+    text-shadow: 1px 1px 0px #000000;
+    font-size: 2rem;
+}
+
+.homepage-staff p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.homepage-staffs-card {
+    background-color: rgb(255, 227, 233);
+}
+
+.homepage-staffs-card .card {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff73;
+}
+
+.homepage-staffs-card .card h4 {
+    color: #d71132;
+    font-family: "Chela One", system-ui;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.homepage-staffs-card .card img {
+    width: 100%;
+    max-width: 300px;
+    clip-path: circle(50% at 50% 50%);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.homepage-staffs-card .card .card-body .contact i {
+    font-size: 25px;
+    color: #d71132;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homepage-staff h1 {
+        font-size: 1.5rem;
+    }
+
+    .homepage-staff p {
+        font-size: 1rem;
+    }
+
+    .contact i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .homepage-staff h1 {
+        font-size: 1.2rem;
+    }
+
+    .homepage-staff p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    .contact i {
+        font-size: 18px;
+    }
+
+    .homepage-staffs-card .card img {
+        max-width: 200px;
+        /* Adjust image size for smaller devices */
+    }
+}
+
+
+
+
+
+
+
+/*HOMEPAGE FOOTER*/
+.hompage-links {
+    background-color: rgb(255, 255, 255);
+}
+
+.hompage-links h4 {
+    font-family: "Chela One", system-ui;
+    padding-left: 30%;
+    letter-spacing: 1px;
+}
+
+.hompage-links h3 {
+    letter-spacing: 3px;
+    color: #d71132;
+    font-family: "Chela One", system-ui;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.hompage-links h4 .fb {
+    color: rgb(0, 21, 183);
+}
+
+.hompage-links h4 .ig {
+    color: rgb(183, 0, 0);
+}
+
+.hompage-links h4 span {
+    font-size: 15px;
+}
+
+.hompage-links .btn {
+    letter-spacing: 3px;
+    font-family: "Chela One", system-ui;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hompage-links h4 {
+        padding-left: 10%;
+    }
+
+    .hompage-links .col-lg-4 {
+        margin-bottom: 30px;
+    }
+
+    .hompage-links h3 {
+        font-size: 1.5rem;
+    }
+
+    .hompage-links h4 {
+        font-size: 1.2rem;
+    }
+
+    .hompage-links .btn {
+        font-size: 1rem;
+    }
+
+    .hompage-links .col-lg-4 px-5 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hompage-links .form-control {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hompage-links h3 {
+        font-size: 1.2rem;
+    }
+
+    .hompage-links h4 {
+        font-size: 1rem;
+    }
+
+    .hompage-links .btn {
+        font-size: 0.9rem;
+    }
+
+    .hompage-links .col-lg-4 {
+        text-align: center;
+    }
+
+    .hompage-links h4 {
+        padding-left: 0;
+    }
+
+    .hompage-links .form-control {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
