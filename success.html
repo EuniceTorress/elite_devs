@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Message</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .success-container {
+            padding: 80px 50px;
+            height: auto;
+        }
+
+        .success-card {
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .success-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #28a745;
+            color: white;
+            font-size: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .success-message {
+            margin-top: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .success-description {
+            color: #6c757d;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .btn-success-custom {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-size: 15px;
+        }
+
+        .btn-success-custom:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid success-container d-flex justify-content-center align-items-center ">
+        <div class="success-card shadow">
+            <div class="success-icon">
+                <i class="bi bi-check-lg"></i>
+            </div>
+            <p class="success-message">Your Account has been created successfully!</p>
+            <p class="success-description">Check your email for more information!</p>
+            <button class="btn btn-success-custom">OK</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+</html>
