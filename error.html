@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error Message</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .error-container {
+            padding: 80px 50px;
+            height: auto;
+        }
+
+        .error-card {
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 200px;
+        }
+
+        .error-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #a72828;
+            color: white;
+            font-size: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .error-message {
+            font-size: 40px;
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .error-description {
+            color: #6c757d;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid error-container d-flex justify-content-center align-items-center ">
+        <div class="error-card shadow">
+            <div class="error-icon">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <p class="error-message">Error!</p>
+            <p class="error-description">Check your email or password!</p>
+            <button class="btn btn-danger">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+</html>
