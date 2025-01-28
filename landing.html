@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Chela+One&family=Cookie&family=Galindo&family=Rubik+Mono+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Chela+One&family=Cookie&family=Galindo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Mono+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -23,10 +23,20 @@
         padding: 0;
     }
 
+    *>p {
+        font-family: "Open sans", serif;
+    }
+
     .navbar {
         letter-spacing: 3px;
-        font-family: "Chela One", system-ui;
+        font-family: "Montserrat", serif;
         background-color: #ffffff00;
+    }
+
+    .navbar .nav-link {
+        color: #d71132;
+        text-shadow: 1px 1px 0px #ffffff;
+        font-weight: 500;
     }
 
     .navbar .logo img {
@@ -40,7 +50,7 @@
 
 
 
-    .hero {
+    #hero {
         background-image: url(./img/homepage-webslider-1.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -48,113 +58,152 @@
         overflow: hidden;
     }
 
-    .hero .hero-header h1 {
-        color: #fff;
-        font-size: 60px;
-        font-family: "Chela One", system-ui;
-    }
-
-    .hero .hero-header p {
-        color: #fff;
-        font-size: 25px;
-    }
-
-    .hero .hero-header {
+    #hero .hero-header {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.504);
-        padding: 40px 40px 100px 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 80px 15px;
     }
 
-    .hero .hero-text .txt {
+    #hero .hero-text .txt {
         color: #d71132;
         text-shadow: 1px 1px 0px #000000;
-        font-size: 70px;
-        letter-spacing: 10px;
+        font-size: 3rem;
+        letter-spacing: 5px;
     }
 
-    .hero .hero-text .txt2 {
-        font-size: 20px;
+    #hero .hero-text .txt2 {
+        font-size: 1.2rem;
+        color: #fff;
     }
 
-    .hero .hero-text .btn {
+    #hero .hero-text .btn {
         letter-spacing: 3px;
-        font-family: "Chela One", system-ui;
+        font-family: "Montserrat", serif;
+        margin-top: 15px;
     }
 
+    #hero .hero-image {
+        clip-path: circle(50% at 50% 50%);
+        background-color: #fff;
+        max-width: 300px;
+        height: 300px;
+        overflow: hidden;
+    }
 
-    .hero .hero-card {
+    #hero .hero-image img {
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(5px);
-        border-radius: 15px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        padding: 30px;
-        width: 100%;
-        max-width: 400px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        object-fit: cover;
     }
 
-    .hero .hero-card h2 {
-        font-family: "Chela One", system-ui;
+    @media (max-width: 992px) {
+        #hero .hero-text .txt {
+            font-size: 2.5rem;
+        }
+
+        #hero .hero-text .txt2 {
+            font-size: 1rem;
+        }
+
+        #hero .hero-image {
+            max-width: 250px;
+            height: 250px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        #hero .hero-text .txt {
+            font-size: 2rem;
+        }
+
+        #hero .hero-header {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        #hero .hero-image {
+            max-width: 200px;
+            height: 200px;
+        }
+    }
+
+
+
+    /*facility page*/
+    .facility-header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./img/homepage-webslider-1.jpg);
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .facility-header-bg {
+        background-color: rgba(0, 0, 0, 0.668);
+        padding: 80px 20px;
+    }
+
+    .facility-header h1 {
+        font-size: 2.5rem;
+        font-family: "Montserrat", serif;
         color: #d71132;
         text-shadow: 1px 1px 0px #000000;
-        text-align: center;
     }
 
-    .hero .hero-card .form-label,
-    .form-control {
-        color: #ffffff;
+    .facility-header p {
+        font-size: 1.2rem;
+        color: #fff;
     }
-
-    .hero .hero-card .form-control {
-        border-radius: unset;
-        background: transparent;
-        border: unset;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .hero .hero-card .form-control:focus {
-        background: rgba(0, 0, 0, 0.1);
-        color: #ffffff;
-    }
-
-    .hero .hero-card .btn-danger {
-        font-family: "Chela One", system-ui;
-    }
-    .hero .hero-card .forgot-link {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    .hero .hero-card .forgot-link:hover {
-        text-decoration: underline;
-    }
-
-
-
 
 
     .facilities {
-        height: 150px;
         background-color: rgb(255, 227, 233);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .facilities .card {
-        top: -100px;
-        z-index: 4;
-    }
-
-    .facilities .card .card-body h3 i {
-        color: #d71132;
+        border: unset;
+        background-color: unset;
+        width: 100%;
+        max-width: 25rem;
+        margin: 1rem 0;
     }
 
     .facilities .card .card-body {
         text-align: center;
     }
 
-    .facilities .rooms {
-        color: #fff;
+    .facilities .card .card-text {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    @media (max-width: 992px) {
+        .facilities .card {
+            max-width: 20rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .facilities {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .facilities .card {
+            max-width: 100%;
+        }
+
+        .facilities .card .card-body {
+            padding: 20px !important;
+        }
+
+        .facilities .card .card-text {
+            font-size: 0.9rem;
+        }
     }
 
 
@@ -162,7 +211,8 @@
 
 
 
-    .room-container {
+    /*ROOMs*/
+    #room-container {
         color: #fff;
         background-color: rgb(255, 227, 233);
     }
@@ -171,7 +221,7 @@
         color: #d71132;
         font-size: 50px;
         text-shadow: 1px 2px 2px #ffffff;
-        font-family: "Chela One", system-ui;
+        font-family: "Montserrat", serif;
     }
 
     .rooms .image-wrapper {
@@ -203,62 +253,138 @@
     }
 
     .rooms .btn {
-        letter-spacing: 3px;
-        font-family: "Chela One", system-ui;
+        letter-spacing: 1px;
+        font-family: "Montserrat", serif;
     }
 
 
 
-    .links {
+    /*LANDING FOOTER*/
+    .landing-page-links {
         background-color: rgb(255, 255, 255);
+        height: auto;
     }
 
-    .links h4 {
-        font-family: "Chela One", system-ui;
+    .landing-page-links h4 {
+        font-family: "Montserrat", serif;
         padding-left: 30%;
         letter-spacing: 1px;
     }
 
-    .links h3 {
+    .landing-page-links h3 {
         letter-spacing: 3px;
         color: #d71132;
-        font-family: "Chela One", system-ui;
+        font-family: "Montserrat", serif;
+        text-shadow: 1px 1px 0px #000000;
     }
 
-    .links h4 .fb {
+    .landing-page-links h4 .fb {
         color: rgb(0, 21, 183);
     }
 
-    .links h4 .ig {
+    .landing-page-links h4 .ig {
         color: rgb(183, 0, 0);
     }
 
-    .links h4 span {
+    .landing-page-links h4 span {
         font-size: 15px;
     }
 
-    .links .btn {
+    .landing-page-links .btn {
         letter-spacing: 3px;
-        font-family: "Chela One", system-ui;
+        font-family: "Montserrat", serif;
+    }
+
+    .feedback-form {
+        max-height: 100px;
+    }
+
+
+
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+        .landing-page-links h4 {
+            padding-left: 10%;
+        }
+
+        .landing-page-links .col-lg-4 {
+            margin-bottom: 30px;
+        }
+
+        .landing-page-links h3 {
+            font-size: 1.5rem;
+        }
+
+        .landing-page-links h4 {
+            font-size: 1.2rem;
+        }
+
+        .landing-page-links .btn {
+            font-size: 1rem;
+        }
+
+        .landing-page-links .col-lg-4 px-5 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .landing-page-links .form-control {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .landing-page-links {
+            padding: 50px 30px;
+        }
+
+        .landing-page-links h3 {
+            font-size: 1.2rem;
+        }
+
+        .landing-page-links h4 {
+            font-size: 1rem;
+        }
+
+        .landing-page-links .btn {
+            font-size: 0.9rem;
+        }
+
+        .landing-page-links .col-lg-4 {
+            text-align: center;
+        }
+
+        .landing-page-links h4 {
+            padding-left: 0;
+        }
+
+        .landing-page-links .form-control {
+            width: 100%;
+            font-size: 0.9rem;
+        }
     }
 </style>
 
 <body>
 
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-3">
-            <a class="navbar-brand logo" href="#"><img src="./img/bsu.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="./img/bsu.png" alt="">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><button
-                                class="btn btn-danger">Login</button></a>
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#room-container">Facilities</a>
                     </li>
                 </ul>
             </div>
@@ -266,35 +392,26 @@
     </nav>
 
 
-    <section class="hero">
+    <section id="hero">
         <header class="hero-header">
-            <div class="row d-flex justify-content-center align-items-center ps-5">
-                <div class="col-lg-8 hero-text">
-                    <h1 class="fw-bold ps-5 txt">ALL <br> IN ONE PLACE</h1>
-                    <p class="ps-5 txt2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae adipisci
-                        assumenda
-                        laboriosam impedit ab nisi sint accusamus deleniti, omnis ea libero. Alias dolore dicta deserunt
-                        iste impedit commodi minima quasi.</p>
-                    <button type="button" class="btn btn-danger ms-5">Explore</button>
-                </div>
-                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center py-5">
-                    <div class="hero-card card p-5">
-                        <h2 class="pb-4">Login</h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password"
-                                    placeholder="Enter your password" required>
-                            </div>
-                            <button type="submit" class="btn btn-danger w-100">Login</button>
-                        </form>
-                        <div class="text-center mt-3">
-                            <a href="#" class="forgot-link">Forgot Password?</a>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 hero-text text-center text-lg-start">
+                        <h1 class="fw-bold txt">ALL <br> IN ONE PLACE</h1>
+                        <p class="txt2">
+                            S'tockpile is a user-friendly system designed to provide an efficient and reliable way to
+                            manage resource needs. Whether it's reserving items, checking availability, or staying
+                            informed, S'tockpile ensures convenience, speed, and dependability for students, faculty,
+                            and staff, as well as outsiders.
+                            The Resource Generation Office (RGO) of Batangas State University provides quality,
+                            affordable services to the community. S'tockpile enhances access to uniforms, books,
+                            facilities, and other resources, making request management easier and more efficient.
+                        </p>
+                        <button type="button" class="btn btn-danger">SIGNUP</button>
+                    </div>
+                    <div class="col-lg-5 col-md-12 text-center py-4">
+                        <div class="card hero-image shadow-lg mx-auto">
+                            <img src="./img/bsu.png" alt="Image Description">
                         </div>
                     </div>
                 </div>
@@ -302,39 +419,31 @@
         </header>
     </section>
 
-    <section class="facilities container-fluid py-3">
+
+    <section class="facilities container-fluid p-0">
         <div class="container">
-            <div class="row px-5 ">
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    <div class="card shadow" style="width: 25rem;">
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center align-items-start">
+                    <div class="card m-0" style="width: 25rem;">
                         <div class="card-body py-5">
-                            <h3><i class="fa-solid fa-truck-fast mb-4"></i></h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's
-                                content.</p>
+                            <p class="card-text p-3">Discover innovative, high-quality facilities for rent at Batangas
+                                State University through the Resource Generation Office (RGO).</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    <div class="card shadow" style="width: 25rem;">
+                <div class="col-lg-4 d-flex justify-content-center align-items-start">
+                    <div class="card m-0" style="width: 25rem;">
                         <div class="card-body py-5">
-                            <h3><i class="fa-solid fa-lock mb-4"></i></h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's
-                                content.</p>
+                            <p class="card-text p-3">Our facilities are ready to meet your needs for events, meetings,
+                                activities, and more!</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    <div class="card shadow" style="width: 25rem;">
+                <div class="col-lg-4 d-flex justify-content-center align-items-start">
+                    <div class="card m-0" style="width: 25rem;">
                         <div class="card-body py-5">
-                            <h3><i class="fa-solid fa-shop mb-4"></i></h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's
-                                content.</p>
+                            <p class="card-text p-3">Looking for a space to run your food business? Rent our campus
+                                canteens and connect with the BatStateU community!</p>
                         </div>
                     </div>
                 </div>
@@ -348,10 +457,21 @@
 
 
 
-    <div class="container-fuid room-container py-5">
-        <div class="rooms px-5">
-            <h1 class="text-center pb-4">Facilities</h1>
-            <div class="row">
+    <div class="container-fuid pb-3" id="room-container">
+        <header class="facility-header p-0">
+            <div id="announcement">
+                <div
+                    class="container-fluid facility-header-bg d-flex flex-column justify-content-center align-items-center">
+                    <h1>Facilities</h1>
+                    <p style="width: 40rem;">The RGO at Batangas State University offers versatile, high-quality
+                        facilities for events, meetings, and activities, ensuring a professional and convenient
+                        on-campus experience.</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="rooms px-3 pt-3">
+            <div class="row g-3">
                 <div class="col-lg-4">
                     <div class="image-wrapper" style="background-image: url(./img/download.jpg);">
                         <div class="wrapper d-flex justify-content-center align-items-center">
@@ -372,7 +492,51 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3 g-3">
+                <div class="col-lg-4">
+                    <div class="image-wrapper" style="background-image: url(./img/maxresdefault.jpg);">
+                        <div class="wrapper d-flex justify-content-center align-items-center">
+                            <p>Room-name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-wrapper" style="background-image: url(./img/th.jpg);">
+                        <div class="wrapper d-flex justify-content-center align-items-center">
+                            <p>Room-name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-wrapper " style="background-image: url(./img/th\ \(1\).jpg);">
+                        <div class="wrapper d-flex justify-content-center align-items-center">
+                            <p>Room-name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mt-4">
+                <div class="col-lg-8">
+                    <div class="main-image" style="background-image: url(./img/animeschool-5.webp);">
+                        <div class="main-wrapper d-flex justify-content-center align-items-center">
+                            <p>Room-name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-wrapper" style="background-image: url(./img/download.jpg);">
+                        <div class="wrapper d-flex justify-content-center align-items-center">
+                            <p>Room-name</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper mt-3" style="background-image: url(./img/OIP.jpg);">
+                        <div class="wrapper d-flex justify-content-center align-items-center">
+                            <p>Room-name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 g-3">
                 <div class="col-lg-4">
                     <div class="image-wrapper" style="background-image: url(./img/maxresdefault.jpg);">
                         <div class="wrapper d-flex justify-content-center align-items-center">
@@ -407,23 +571,26 @@
 
 
     <footer>
-        <div class="links container-fluid px-5 pt-3 pb-4">
+        <div class="landing-page-links container-fluid px-5 pt-3">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center">
                     <h3>Elite Devs</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt magnam ipsa consequuntur
-                        dignissimos veniam eius soluta, sequi consectetur quia incidunt veritatis! Soluta recusandae
-                        vero maiores dicta quia hic, autem eius?</p>
+                    <p> a group of student developers working together to create innovative solutions for real-life
+                        problems. As part of our capstone project, we use our skills, creativity, and teamwork to build
+                        practical and impactful projects.
+
+                        We are committed to learning, improving, and making a positive impact through our projects. Our
+                        goal is to show how students can turn ideas into meaningful solutions</p>
                 </div>
-                <div class="col-lg-4 px-5 d-flex justify-content-between flex-column ">
+                <div class="col-lg-4 col-md-12 d-flex flex-column mb-4 justify-content-center links">
                     <h4><i class="fa-brands fa-facebook fb"></i><span class="mx-3"><a href="">Elite Devs</a></span></h4>
                     <h4><i class="fa-brands fa-square-instagram ig"></i><span class="mx-3"><a href="">Elite Devs
                                 IG</a></span></h4>
                     <h4><i class="fa-solid fa-envelope em"></i><span class="mx-3"><a
                                 href="">EliteDevs@gmail.com</a></span></h4>
                 </div>
-                <div class="col-lg-4 ">
-                    <form>
+                <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center feedback-content">
+                    <form class="feedback-form">
                         <div class="mb-3">
                             <label for="feedback" class="form-label">Your Feedback</label>
                             <textarea class="form-control" id="feedback"
