@@ -36,7 +36,7 @@
     .navbar .nav-link {
         color: #d71132;
         text-shadow: 1px 1px 0px #ffffff;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .navbar .logo img {
@@ -77,9 +77,11 @@
     }
 
     #hero .hero-text .btn {
-        letter-spacing: 3px;
         font-family: "Montserrat", serif;
         margin-top: 15px;
+    }
+    #hero .hero-text .btn a{
+        text-decoration: none
     }
 
     #hero .hero-image {
@@ -272,7 +274,7 @@
     }
 
     .landing-page-links h3 {
-        letter-spacing: 3px;
+        font-weight: 600;
         color: #d71132;
         font-family: "Montserrat", serif;
         text-shadow: 1px 1px 0px #000000;
@@ -291,7 +293,6 @@
     }
 
     .landing-page-links .btn {
-        letter-spacing: 3px;
         font-family: "Montserrat", serif;
     }
 
@@ -381,10 +382,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#room-container">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-danger"><a href="login.html" style="text-decoration: none; font-weight: 600;" class="text-light">LOGIN</a></button>
                     </li>
                 </ul>
             </div>
@@ -407,7 +414,7 @@
                             affordable services to the community. S'tockpile enhances access to uniforms, books,
                             facilities, and other resources, making request management easier and more efficient.
                         </p>
-                        <button type="button" class="btn btn-danger">SIGNUP</button>
+                        <button type="button" class="btn btn-danger" style="font-weight: 600;"><a href="signuptwo.html" class="text-light">Signup</a></button>
                     </div>
                     <div class="col-lg-5 col-md-12 text-center py-4">
                         <div class="card hero-image shadow-lg mx-auto">
@@ -457,7 +464,7 @@
 
 
 
-    <div class="container-fuid pb-3" id="room-container">
+    <div class="container-fuid pb-5" id="room-container">
         <header class="facility-header p-0">
             <div id="announcement">
                 <div
@@ -560,7 +567,7 @@
                 </div>
             </div>
             <div class="btns mt-4 text-center">
-                <button type="button" class="btn btn-danger">VIE ALL FACILITIES</button>
+                <button type="button" class="btn btn-danger" style="font-weight: 600;">All Facilities</button>
             </div>
         </div>
     </div>
@@ -592,7 +599,7 @@
                 <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center feedback-content">
                     <form class="feedback-form">
                         <div class="mb-3">
-                            <label for="feedback" class="form-label">Your Feedback</label>
+                            <label for="feedback" class="form-label fw-bold text-danger">Your Feedback</label>
                             <textarea class="form-control" id="feedback"
                                 placeholder="Write your feedback here"></textarea>
                         </div>
