@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Chela+One&family=Cookie&family=Galindo&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hompage-merchandise{
+            background-color: rgb(255, 227, 233);
+            width: 100%;
+            max-height: 720px;
+            overflow-x: hidden;
+        }
+        .homepage-merch-row {
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .homepage-merch-row .dropdown-menu .dropdown-item {
+            font-family: "Chela One", system-ui;
+            color: #d71132;
+            letter-spacing: 2px;
+        }
+
+        .homepage-merch-row .dropdown .btn-outline-danger {
+            font-family: "Chela One", system-ui;
+            color: #d71132;
+            letter-spacing: 2px;
+        }
+
+        .homepage-merch-row .dropdown .btn-outline-danger:hover {
+            color: #ffffff !important;
+        }
+
+        .homepage-merch-card {
+            width: 100%;
+            border: none;
+            overflow: hidden;
+        }
+        .homepage-merch-card img {
+            object-fit: cover;
+            width: 100%;
+            height: 170px;
+        }
+
+        .homepage-merch-card .card-body .card-title {
+            font-family: "Chela One", system-ui;
+            color: #d71132;
+            text-shadow: 1px 1px 2px #000000;
+            letter-spacing: 1px;
+        }
+
+        .hompage-merch-search .btn-primary {
+            background-color: #d71132;
+            border: none;
+            font-family: "Chela One", system-ui;
+        }
+
+        .hompage-merch-search .btn-primary:hover {
+            background-color: #d71132;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid hompage-merchandise p-4">
+        <div class="row homepage-merch-row mb-4 align-items-center">
+            <div class="col-lg-2 mb-3 mb-lg-0 p-0">
+                <div class="dropdown">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Choose categories
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 ms-auto p-0 hompage-merch-search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for merchandise...">
+                    <button class="btn btn-outline-danger">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 homepage-merch-img">
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card homepage-merch-card shadow">
+                    <img src="./img/homepage-webslider-1.jpg" alt="Merchandise Image" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h5 class="card-title">Item Name</h5>
+                        <div class="space d-flex flex-row">
+                            <p class="card-text m-0">Php 10.00</p>
+                            <p class="card-text ms-auto">3.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
