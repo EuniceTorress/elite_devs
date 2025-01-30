@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="homepage.css">
 
 </head>
 
 
-<body>
+<body>  
 
 
     <nav class="navbar navbar-expand-lg sticky-top bg-light">
@@ -34,9 +35,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="landing.html">Landing Page</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
                     </li>
                     <li class="nav-item">
@@ -47,6 +45,9 @@
                     </li>
                     <li class="nav-item"></li>
                     <a class="nav-link" href="#homepage-staffs">Staffs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="landing.html">Landings-Page</a>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-danger"><a href="login.html" class="text-light">LOGIN</a></button>
@@ -62,8 +63,8 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-md-12 homepage-text text-center text-lg-start">
-                        <h1 class="fw-bold txt">Resource Generation Office</h1>
-                        <p class="txt2">
+                        <h1 class="fw-bold txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Resource Generation Office</h1>
+                        <p class="txt2" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200">
                             The Resource Generation Office (RGO) of Batangas State University, is committed to serving
                             the needs of students, faculty & staff, and the entire BatStateU community. By enhancing
                             University services and providing quality products, RGO plays a vital role in generating
@@ -72,10 +73,10 @@
                             publishers to ensure the best value. RGO also offers innovative facilities at reasonable
                             fees, and operates a University shop featuring quality souvenirs and merchandise.
                         </p>
-                        <button type="button" class="btn btn-danger">SIGNUP</button>
+                        <button type="button" class="btn btn-danger" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">SIGNUP</button>
                     </div>
                     <div class="col-lg-5 col-md-12 text-center py-4">
-                        <div class="card homepage-image shadow-lg mx-auto">
+                        <div class="card homepage-image shadow-lg mx-auto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                             <img src="./img/bsu.png" alt="Image Description">
                         </div>
                     </div>
@@ -95,15 +96,15 @@
     <section class="homepage-browse">
         <div class="container-fluid">
             <div class="browse-description d-flex flex-column justify-content-center align-items-center py-4">
-                <h3 class="text-center">Merchandise Browsing & <br> Item Reservation</h3>
-                <p class="text-center">The S'tockpile allows users to browse merchandise
+                <h3 class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Merchandise Browsing & <br> Item Reservation</h3>
+                <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">The S'tockpile allows users to browse merchandise
                     and reserve items from the Resource Generation Office.
                     With an easy-to-use interface, users can quickly explore available products and secure their
                     selections in advance.</p>
             </div>
             <div class="row py-3 gy-3">
                 <div class="col-lg-3">
-                    <div class="card browse-card">
+                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                         <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
                         <div class="card-text">
                             <h5 class="mb-0">ITEM NAME</h5>
@@ -114,7 +115,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card browse-card">
+                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                         <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
                         <div class="card-text">
                             <h5 class="mb-0">ITEM NAME</h5>
@@ -125,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card browse-card">
+                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                         <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
                         <div class="card-text">
                             <h5 class="mb-0">ITEM NAME</h5>
@@ -136,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card browse-card">
+                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                         <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
                         <div class="card-text">
                             <h5 class="mb-0">ITEM NAME</h5>
@@ -160,7 +161,7 @@
 
 
 
-    <section id="homepage-announcement">
+    <section id="homepage-announcement" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <header class="homepage-announcement-header p-0">
             <div id="announcement">
                 <div
@@ -171,10 +172,10 @@
             </div>
         </header>
 
-        <div class="containe-fluid announcement-container p-3">
+        <div class="containe-fluid announcement-container p-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
                         <div class="row h-100 flex-md-row flex-column">
                             <div class="col-md-8 col-sm-12 announcement-image p-0">
                                 <img src="./img/homepage-webslider-1.jpg" class="d-block img-fluid" alt="Slide 1">
@@ -231,9 +232,9 @@
 
 
 
-    <section id="reserve">
+    <section id="reserve" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
         <header class="reserve-header p-0">
-            <div class="container-fluid reserve-header-bg d-flex flex-column justify-content-center align-items-center">
+            <div class="container-fluid reserve-header-bg d-flex flex-column justify-content-center align-items-center" >
                 <h1>RESERVE NOW!</h1>
                 <p style="width: 40rem;">Easily reserve uniforms, merchandise, and facilities from the RGO!
                     Enjoy a hassle-free process and secure the items you need at your convenience.</p>
@@ -244,7 +245,7 @@
         <div class="container-fluid p-3 pb-5 reserve-text">
             <div class="row gy-4">
                 <div class="col-md-4">
-                    <div class="card reserve-card  border-0">
+                    <div class="card reserve-card  border-0" data-aos="fade-up-right" data-aos-duration="2000" data-aos-delay="200" >
                         <div class="card-body text-center">
                             <h5 class="reserve-card-title"><i class="fa-solid fa-truck-fast mb-4"></i></h5>
                             <p class="card-text px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, et
@@ -253,7 +254,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card reserve-card  border-0">
+                    <div class="card reserve-card  border-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
                         <div class="card-body text-center">
                             <h5 class="reserve-card-title"><i class="fa-solid fa-lock mb-4"></i></h5>
                             <p class="card-text px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, et
@@ -263,7 +264,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card reserve-card  border-0">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
                             <h5 class="reserve-card-title"><i class="fa-solid fa-shield-halved mb-4"></i></i></h5>
                             <p class="card-text px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, et
                                 vel corrupti hic ea dolorum dolorem ullam mollitia? Aliquid, dignissimos.</p>
@@ -283,7 +284,7 @@
 
 
 
-    <section class="facilities">
+    <section class="facilities" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
         <header class="hompahe-facility-header p-0">
             <div
                 class="container-fluid hompahe-facility-texts d-flex flex-column justify-content-center align-items-center">
@@ -300,20 +301,20 @@
         <div class="container-fluid homepage-facility-section py-4">
             <div class="row gy-3 px-3">
                 <div class="col-md-6">
-                    <div class="card facility-rentals-card shadow border-0 p-2">
+                    <div class="card facility-rentals-card shadow border-0 p-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
                         <img src="./img/purchase.png" class="img-fluid" alt="Facility Rentals">
                         <div class="text-center mt-2">
                             <button class="btn btn-danger"><a href="test.html" style="text-decoration: none; color: #fff;">Proceed</a></button>
                         </div>
                     </div>
-                    <div class="card facility-rentals-card shadow border-0 p-2 mt-3">
+                    <div class="card facility-rentals-card shadow border-0 p-2 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
                         <img src="./img/Screenshot (3).png" class="img-fluid" alt="Facility Rentals">
                         <div class="text-center mt-2">
                             <button class="btn btn-danger"><a href="reserve.html" style="text-decoration: none; color: #fff;">Proceed</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
                     <div class="homepage-form-container shadow py-4 p-5">
                         <h3 class="text-center mb-4">Facility/ies to be Rented</h3>
                         <form id="facility-form">
@@ -386,7 +387,7 @@
 
 
 
-    <section class="homepage-yearboook">
+    <section class="homepage-yearboook" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
         <header class="homepage-yearbook-content p-0">
             <div
                 class="container-fluid homepage-yearbook-bg d-flex flex-column justify-content-center align-items-center">
@@ -398,24 +399,24 @@
         </header>
 
 
-        <div class="container-fluid yearbook-section p-4">
+        <div class="container-fluid yearbook-section p-4" >
             <div class="row">
                 <div class="col-md-6 yearbook-images">
                     <div class="row gy-4">
-                        <div class="col-lg-6 d-flex justify-content-center align-items-center first-row">
-                            <img src="./img/homepage-webslider-1.jpg" alt="">
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center first-row" >
+                            <img src="./img/homepage-webslider-1.jpg" alt="" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" >
                         </div>
                         <div class="col-lg-6 d-flex justify-content-center align-items-center first-row">
-                            <img src="./img/homepage-webslider-1.jpg" alt="">
+                            <img src="./img/homepage-webslider-1.jpg" alt="" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
                         </div>
                         <div class="col-lg-12 d-flex justify-content-center align-items-center second-row">
-                            <img src="./img/homepage-webslider-1.jpg" alt="">
+                            <img src="./img/homepage-webslider-1.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 yearbook-form">
-                    <h1 class="text-center py-4">FILL UP THE FORM</h1>
-                    <div class="card shadow border-0 ">
+                    <h1 class="text-center py-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" >FILL UP THE FORM</h1>
+                    <div class="card shadow border-0 " data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
                         <div class="Fill-up p-5">
                             <form>
                                 <div class="mb-3">
@@ -467,7 +468,7 @@
 
 
 
-    <section id="homepage-staffs">
+    <section id="homepage-staffs" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"      >
         <header class="homepage-staff p-0">
             <div
                 class="container-fluid homepage-staff-header-bg d-flex flex-column justify-content-center align-items-center">
@@ -480,7 +481,7 @@
         <div class="container-fluid homepage-staffs-card p-4">
             <div class="row">
                 <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-4">
-                    <div class="card p-3 border-0 shadow">
+                    <div class="card p-3 border-0 shadow" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" >
                         <div class="card-first-row d-flex justify-content-center">
                             <div class="card-text text-center">
                                 <img src="./img/homepage-webslider-1.jpg" alt="...">
@@ -499,7 +500,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-4">
-                    <div class="card p-3 border-0 shadow">
+                    <div class="card p-3 border-0 shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
                         <div class="card-first-row d-flex justify-content-center">
                             <div class="card-text text-center">
                                 <img src="./img/homepage-webslider-1.jpg" alt="...">
@@ -518,7 +519,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-4">
-                    <div class="card p-3 border-0 shadow">
+                    <div class="card p-3 border-0 shadow" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
                         <div class="card-first-row d-flex justify-content-center">
                             <div class="card-text text-center">
                                 <img src="./img/homepage-webslider-1.jpg" alt="...">
@@ -547,30 +548,30 @@
         <div class="homepage-links container-fluid px-5 pt-3">
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center">
-                    <h3>Elite Devs</h3>
-                    <p> a group of student developers working together to create innovative solutions for real-life
+                    <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Elite Devs</h3>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" > a group of student developers working together to create innovative solutions for real-life
                         problems. As part of our capstone project, we use our skills, creativity, and teamwork to build
                         practical and impactful projects.
 
                         We are committed to learning, improving, and making a positive impact through our projects. Our
                         goal is to show how students can turn ideas into meaningful solutions</p>
                 </div>
-                <div class="col-lg-4 col-md-12 d-flex flex-column mb-4 justify-content-center links">
-                    <h4><i class="fa-brands fa-facebook fb"></i><span class="mx-3"><a href="">Elite Devs</a></span></h4>
-                    <h4><i class="fa-brands fa-square-instagram ig"></i><span class="mx-3"><a href="">Elite Devs
+                <div class="col-lg-4 col-md-12 links py-5">
+                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><i class="fa-brands fa-facebook fb"></i><span class="mx-3"><a href="">Elite Devs</a></span></h4>
+                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><i class="fa-brands fa-square-instagram ig"></i><span class="mx-3"><a href="">Elite Devs
                                 IG</a></span></h4>
-                    <h4><i class="fa-solid fa-envelope em"></i><span class="mx-3"><a
+                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><i class="fa-solid fa-envelope em"></i><span class="mx-3"><a
                                 href="">EliteDevs@gmail.com</a></span></h4>
                 </div>
-                <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center feedback-content">
+                <div class="col-lg-4 col-md-12 feedback-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                     <form class="feedback-form">
                         <div class="mb-3">
                             <label for="feedback" class="form-label">Your Feedback</label>
                             <textarea class="form-control" id="feedback"
                                 placeholder="Write your feedback here"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100"
-                            style="background-color: #ef233c; border: none;">Submit</button>
+                        <button type="submit" class="btn btn-danger w-100"
+                            style="background-color: #ef233c; border: none;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Submit</button>
                     </form>
                 </div>
             </div>
@@ -583,6 +584,13 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.6/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
