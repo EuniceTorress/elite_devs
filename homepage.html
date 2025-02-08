@@ -20,11 +20,11 @@
 </head>
 
 
-<body>  
+<body>
 
 
     <nav class="navbar navbar-expand-lg sticky-top bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <div class="logo">
                 <img src="./img/bsu.png" alt="">
             </div>
@@ -33,26 +33,30 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#homepage-announcement">Announcement</a>
+                        <a class="nav-link" aria-current="page" href="#merch-browse">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#announcement">Announcement</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#reserve">Reserve</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facility-rentals">Rentals</a>
+                    </li>
                     <li class="nav-item"></li>
-                    <a class="nav-link" href="#homepage-staffs">Staffs</a>
+                    <a class="nav-link" href="#staffs">Staffs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="landing.html">Landings-Page</a>
                     </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-danger"><a href="login.html" class="text-light">LOGIN</a></button>
-                    </li>
                 </ul>
+                <button class="btn btn-outline-danger"><a href="login.html">Login</a></button>
             </div>
         </div>
     </nav>
@@ -62,21 +66,23 @@
         <header class="homepage-header">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-12 homepage-text text-center text-lg-start">
-                        <h1 class="fw-bold txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Resource Generation Office</h1>
-                        <p class="txt2" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200">
-                            The Resource Generation Office (RGO) of Batangas State University, is committed to serving
-                            the needs of students, faculty & staff, and the entire BatStateU community. By enhancing
-                            University services and providing quality products, RGO plays a vital role in generating
-                            additional income to strengthen the institution's financial capacity. It offers a wide range
-                            of services, including affordable school uniforms, books sourced directly from authors or
-                            publishers to ensure the best value. RGO also offers innovative facilities at reasonable
-                            fees, and operates a University shop featuring quality souvenirs and merchandise.
+                    <div class="col-lg-8 col-md-12 homepage-text text-center text-lg-start">
+                        <p class="mx-2" style="color: #ef233c; font-weight: 700; font-size: 20px;"
+                            data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="200">All in one place
                         </p>
-                        <button type="button" class="btn btn-danger" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">SIGNUP</button>
+                        <h1 class="fw-bold txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                            Resource Generation Office</h1>
+                        <p class="txt2" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200">
+                            The Resource Generation Office (RGO) of Batangas State University supports the institution
+                            by enhancing services and generating income through affordable uniforms, books, facilities,
+                            and a University shop.
+                        </p>
+                        <button type="button" class="btn btn-outline-danger" data-aos="fade-right"
+                            data-aos-duration="1000" data-aos-delay="200"><a href="signup.html">Signup</a></button>
                     </div>
-                    <div class="col-lg-5 col-md-12 text-center py-4">
-                        <div class="card homepage-image shadow-lg mx-auto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-12 text-center py-4">
+                        <div class="card homepage-image shadow-lg mx-auto" data-aos="fade-left" data-aos-duration="1000"
+                            data-aos-delay="200">
                             <img src="./img/bsu.png" alt="Image Description">
                         </div>
                     </div>
@@ -93,58 +99,180 @@
 
 
 
-    <section class="homepage-browse">
-        <div class="container-fluid">
-            <div class="browse-description d-flex flex-column justify-content-center align-items-center py-4">
-                <h3 class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Merchandise Browsing & <br> Item Reservation</h3>
-                <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">The S'tockpile allows users to browse merchandise
-                    and reserve items from the Resource Generation Office.
-                    With an easy-to-use interface, users can quickly explore available products and secure their
-                    selections in advance.</p>
+    <section id="merch-browse" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+        <div class="container-fluid p-5">
+            <div class="merch-text pt-5">
+                <h1 class="m-0" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">Merchandise
+                    Browsing<br>&
+                    Item Reservation</h1>
+                <p><i data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Qui, tempore!</i></p>
             </div>
-            <div class="row py-3 gy-3">
-                <div class="col-lg-3">
-                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                        <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-text">
-                            <h5 class="mb-0">ITEM NAME</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
-                                doloremque?</p>
-                            <button type="button" class="btn btn-danger browse-button">VIEW</button>
+            <div class="merch-items py-5" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                <div class="row gy-5">
+                    <div class="col-lg-3">
+                        <div class="card merc-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                            <img src="./img/27b5a1602087a7113d58118e357bdc54.jpg" alt="">
+                            <div class="card-body d-flex flex-row py-3">
+                                <div class="merch-card-text" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <h4 class="m-0">Tshirt</h4>
+                                    <button class="btn btn-outline-danger my-2"><a href="">View</a></button>
+                                </div>
+                                <div class="merch-stars ms-auto" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card merc-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                            <img src="./img/pants.jpg" alt="">
+                            <div class="card-body d-flex flex-row py-3">
+                                <div class="merch-card-text" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <h4 class="m-0">Tshirt</h4>
+                                    <button class="btn btn-outline-danger my-2"><a href="">View</a></button>
+                                </div>
+                                <div class="merch-stars ms-auto" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card merc-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                            <img src="./img/tum.jpg" alt="">
+                            <div class="card-body d-flex flex-row py-3">
+                                <div class="merch-card-text" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <h4 class="m-0">Tshirt</h4>
+                                    <button class="btn btn-outline-danger my-2"><a href="">View</a></button>
+                                </div>
+                                <div class="merch-stars ms-auto" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card merc-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                            <img src="./img/ls.jpg" alt="">
+                            <div class="card-body d-flex flex-row py-3">
+                                <div class="merch-card-text" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <h4 class="m-0">Tshirt</h4>
+                                    <button class="btn btn-outline-danger my-2"><a href="">View</a></button>
+                                </div>
+                                <div class="merch-stars ms-auto" data-aos="fade-up" data-aos-duration="2000"
+                                    data-aos-delay="200">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                        <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-text">
-                            <h5 class="mb-0">ITEM NAME</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
-                                doloremque?</p>
-                            <button type="button" class="btn btn-danger browse-button">VIEW</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="announcement" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <header class="container-fluid announcement-header">
+            <div class="container-fluid carousel-container">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+                    data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner active d-flex justify-conten-center align-items-center carousel-content">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <h1>Announcement Title</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, fuga neque et
+                                    porro iure minus provident, ullam voluptatem beatae pariatur ducimus distinctio
+                                    necessitatibus sed vel odit expedita id, modi dicta est quasi assumenda suscipit
+                                    iusto. Delectus quasi repellat reprehenderit amet excepturi, impedit deserunt
+                                    tempora, laudantium optio eius ex neque perferendis.</p>
+                                <div class="carousel-button">
+                                    <button class="btn btn-outline-danger my-2"><a href="announcementmodal.html"><i
+                                                class="fa-solid fa-arrow-right"></i> More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <h1>Announcement Title</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, fuga neque et
+                                    porro iure minus provident, ullam voluptatem beatae pariatur ducimus distinctio
+                                    necessitatibus sed vel odit expedita id, modi dicta est quasi assumenda suscipit
+                                    iusto. Delectus quasi repellat reprehenderit amet excepturi, impedit deserunt
+                                    tempora, laudantium optio eius ex neque perferendis.</p>
+                                <div class="carousel-button">
+                                    <button class="btn btn-outline-danger my-2"><a href="announcementmodal.html"><i
+                                                class="fa-solid fa-arrow-right"></i> More</a></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                        <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-text">
-                            <h5 class="mb-0">ITEM NAME</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
-                                doloremque?</p>
-                            <button type="button" class="btn btn-danger browse-button">VIEW</button>
-                        </div>
+            </div>
+        </header>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="reserve">
+        <div class="reservation-content p-5 container-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="row  d-flex justify-content-center align-items-center gy-4">
+                <div class="col-lg-6 col-md-12 reservation-text">
+                    <h1 data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="200">RESERVE YOURS NOW!</h1>
+                    <p data-aos="slide-right" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Harum itaque fugit, officia ipsam
+                        dignissimos consequuntur quam repellat quasi inventore qui quas esse perspiciatis est, ad ipsa
+                        rerum reprehenderit, praesentium neque!</p>
+                    <div class="reservation-button" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                        <button class="btn btn-outline-danger my-2"><a href="">Register Now</a></button>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card browse-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                        <img src="./img/homepage-webslider-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-text">
-                            <h5 class="mb-0">ITEM NAME</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
-                                doloremque?</p>
-                            <button type="button" class="btn btn-danger browse-button">VIEW</button>
-                        </div>
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="./img/805cef4a6ebebb9c09d9475454b7820b-remove-bg-io.png" alt="">
                     </div>
                 </div>
             </div>
@@ -159,303 +287,110 @@
 
 
 
-
-
-    <section id="homepage-announcement" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <header class="homepage-announcement-header p-0">
-            <div id="announcement">
-                <div
-                    class="container-fluid homepage-announcement-header-bg d-flex flex-column justify-content-center align-items-center">
-                    <h1>Announcements</h1>
-                    <p style="width: 40rem;">Resource Generation Office Daily Updates</p>
-                </div>
-            </div>
-        </header>
-
-        <div class="containe-fluid announcement-container p-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-                        <div class="row h-100 flex-md-row flex-column">
-                            <div class="col-md-8 col-sm-12 announcement-image p-0">
-                                <img src="./img/homepage-webslider-1.jpg" class="d-block img-fluid" alt="Slide 1">
-                            </div>
-                            <div class="col-md-4 col-sm-12 announcement-text p-4 bg-light">
-                                <h3>Slide 1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos omnis error odio
-                                    itaque veritatis obcaecati porro quo iure animi?</p>
+    <section id="facility-rentals" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="container-fluid p-5">
+            <div class="facility-cards">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="facility-heading-text">
+                            <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Facility Rentals
+                            </h1>
+                            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">The S'tockpile allows
+                                users to easily rent campus
+                                facilities. With a simple booking process, users can quickly select
+                                and secure the space they need for their events or activities.</p>
+                        </div>
+                        <div class="card mt-5">
+                            <div class="card-body fac-card-text">
+                                <i class="fa-solid fa-truck-fast" data-aos="fade-right" data-aos-duration="1000"
+                                    data-aos-delay="200"></i>
+                                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Track Your Order
+                                </h3>
+                                <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Neque cum
+                                    officiis mollitia
+                                    quis quaerat fuga velit vitae quisquam voluptatem aperiam.</p>
+                                <button class="btn btn-outline-danger m-0" data-aos="fade-up" data-aos-duration="1000"
+                                    data-aos-delay="200"><a href="">Proceed</a></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row h-100 flex-md-row flex-column">
-                            <div class="col-md-8 col-sm-12 announcement-image p-0">
-                                <img src="./img/OIP.jpg" class="d-block img-fluid" alt="Slide 2">
-                            </div>
-                            <div class="col-md-4 col-sm-12 announcement-text p-4 bg-light">
-                                <h3>Slide 2</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos omnis error odio
-                                    itaque veritatis obcaecati porro quo iure animi?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row h-100 flex-md-row flex-column">
-                            <div class="col-md-8 col-sm-12 announcement-image p-0">
-                                <img src="./img/maxresdefault.jpg" class="d-block img-fluid" alt="Slide 3">
-                            </div>
-                            <div class="col-md-4 col-sm-12 announcement-text p-4 bg-light">
-                                <h3>Slide 3</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos omnis error odio
-                                    itaque veritatis obcaecati porro quo iure animi?</p>
+                        <div class="card mt-4">
+                            <div class="card-body fac-card-text">
+                                <i class="fa-solid fa-calendar-days" data-aos="fade-right" data-aos-duration="1000"
+                                    data-aos-delay="200"></i>
+                                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Pick Date</h3>
+                                <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Neque cum
+                                    officiis mollitia
+                                    quis quaerat fuga velit vitae quisquam voluptatem aperiam.</p>
+                                <button class="btn btn-outline-danger m-0" data-aos="fade-up" data-aos-duration="1000"
+                                    data-aos-delay="200"><a href="">Proceed</a></button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
+                    <div class="col-lg-6 d-flex justify-conten-center align-items-end">
+                        <div class="facility-form p-4" data-aos="fade-up-left" data-aos-duration="1000"
+                            data-aos-delay="200">
+                            <form>
+                                <h3 class="pb-5">Facility/ies to be Rented</h3>
 
-
-
-
-
-
-
-
-
-    <section id="reserve" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-        <header class="reserve-header p-0">
-            <div class="container-fluid reserve-header-bg d-flex flex-column justify-content-center align-items-center" >
-                <h1>RESERVE NOW!</h1>
-                <p style="width: 40rem;">Easily reserve uniforms, merchandise, and facilities from the RGO!
-                    Enjoy a hassle-free process and secure the items you need at your convenience.</p>
-                <button class="btn btn-danger mt-3"><a href="signuptwo.html" style="text-decoration: none; color: #fff;">Register</a></button>
-            </div>
-        </header>
-
-        <div class="container-fluid p-3 pb-5 reserve-text">
-            <div class="row gy-4">
-                <div class="col-md-4">
-                    <div class="card reserve-card  border-0" data-aos="fade-up-right" data-aos-duration="2000" data-aos-delay="200" >
-                        <div class="card-body text-center">
-                            <h5 class="reserve-card-title"><i class="fa-solid fa-truck-fast mb-4"></i></h5>
-                            <p class="card-text px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, et
-                                vel corrupti hic ea dolorum dolorem ullam mollitia? Aliquid, dignissimos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card reserve-card  border-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-                        <div class="card-body text-center">
-                            <h5 class="reserve-card-title"><i class="fa-solid fa-lock mb-4"></i></h5>
-                            <p class="card-text px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, et
-                                vel corrupti hic ea dolorum dolorem ullam mollitia? Aliquid, dignissimos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card reserve-card  border-0">
-                        <div class="card-body text-center" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
-                            <h5 class="reserve-card-title"><i class="fa-solid fa-shield-halved mb-4"></i></i></h5>
-                            <p class="card-text px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, et
-                                vel corrupti hic ea dolorum dolorem ullam mollitia? Aliquid, dignissimos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <section class="facilities" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-        <header class="hompahe-facility-header p-0">
-            <div
-                class="container-fluid hompahe-facility-texts d-flex flex-column justify-content-center align-items-center">
-                <h1>Facility Rentals</h1>
-                <p style="width: 40rem;">
-                    The S'tockpile allows users to easily rent campus
-                    facilities. With a simple booking process, users can quickly select
-                    and secure the space they need for their events or activities.
-                </p>
-            </div>
-        </header>
-
-
-        <div class="container-fluid homepage-facility-section py-4">
-            <div class="row gy-3 px-3">
-                <div class="col-md-6">
-                    <div class="card facility-rentals-card shadow border-0 p-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-                        <img src="./img/purchase.png" class="img-fluid" alt="Facility Rentals">
-                        <div class="text-center mt-2">
-                            <button class="btn btn-danger"><a href="test.html" style="text-decoration: none; color: #fff;">Proceed</a></button>
-                        </div>
-                    </div>
-                    <div class="card facility-rentals-card shadow border-0 p-2 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-                        <img src="./img/Screenshot (3).png" class="img-fluid" alt="Facility Rentals">
-                        <div class="text-center mt-2">
-                            <button class="btn btn-danger"><a href="reserve.html" style="text-decoration: none; color: #fff;">Proceed</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-                    <div class="homepage-form-container shadow py-4 p-5">
-                        <h3 class="text-center mb-4">Facility/ies to be Rented</h3>
-                        <form id="facility-form">
-                            <div class="row gy-5">
-                                <div class="col-md-6">
-                                    <label for="facility" class="form-label">Facilities:</label>
-                                    <input type="text" class="form-control" name="facility[]" placeholder="Facility">
-                                </div>
-                                <div class="col-md-6 text-center  pt-1">
-                                    <label for="cost" class="form-label">Cost:</label>
-                                    <div class="cost-boxs p-1">15000 php</div>
-                                    <hr>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="hours" class="form-label">No. of Hours:</label>
-                                    <input type="number" class="form-control" name="hours[]" placeholder="Enter hours">
-                                </div>
-                                <div class="col-md-6 text-center  pt-1">
-                                    <label for="total-cost" class="form-label">Total Cost:</label>
-                                    <div class="total-cost-boxs p-1">400000 php</div>
-                                    <hr>
-                                </div>
-                            </div>
-                        </form>
-                        <hr>
-                        <div class="homepage-man my-3">Manpower Required</div>
-                        <button class="btn btn-primary btn-add-manpower mb-5">Add more</button>
-                        <button class="btn btn-danger btn-dels mb-5"><i class="fa-regular fa-trash-can"></i></button>
-                        <form id="homepage-manpower-form">
-                            <div class="row g-3 homepage-manpower-rows">
-                                <div class="col-md-6">
-                                    <div class="dropdown d-flex flex-column">
-                                        <label for="man-power" class="form-label">Manpower</label>
-                                        <button class="btn dropdown-toggle text-start" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <a href="#Grad-year-selling">Man Power 1</a>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#Grad-year-selling">Man Power 2</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#Yearbook">Man Power 3</a></li>
-                                        </ul>
+                                <div class="row gy-3">
+                                    <div class="col-lg-6">
+                                        <label for="exampleInputfacility" class="form-label">Facility</label>
+                                        <input type="facility" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="facilityHelp">
                                     </div>
-                                </div>
-                                <div class="col-md-6 text-center  pt-1">
-                                    <label for="man-cost" class="form-label">Cost:</label>
-                                    <div class="cost-box p-1">12000 php</div>
-                                    <hr>
+                                    <div class="col-lg-6 text-center">
+                                        <p>Cost</p>
+                                        <p>Php 15000</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="exampleInputnumhours" class="form-label">Number or Hours</label>
+                                        <input type="Facility" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="numhoursHelp">
+                                    </div>
+                                    <div class="col-lg-6 text-center">
+                                        <p>TotalmCost</p>
+                                        <p>Php 15000</p>
+                                    </div>
                                 </div>
                                 <hr>
-                                <div class="col-md-6 py-4">
-                                    <label for="man-hours" class="form-label">No. of Hours:</label>
-                                    <input type="number" class="form-control" name="man-hours[]"
-                                        placeholder="Enter hours">
-                                </div>
-                                <div class="col-md-6 text-center  pt-1">
-                                    <label for="man-total-cost" class="form-label">Total Cost:</label>
-                                    <div class="total-cost-box p-1">100000 php</div>
-                                    <hr>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
-
-
-
-    <section class="homepage-yearboook" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-        <header class="homepage-yearbook-content p-0">
-            <div
-                class="container-fluid homepage-yearbook-bg d-flex flex-column justify-content-center align-items-center">
-                <h1>Graduation Picture & Yearbook Availability</h1>
-                <p style="width: 40rem;">The S'tockpile lets users check the availability
-                    of graduation pictures and yearbooks. With real-time updates,
-                    users can quickly confirm if these items are ready for viewing or pickup.</p>
-            </div>
-        </header>
-
-
-        <div class="container-fluid yearbook-section p-4" >
-            <div class="row">
-                <div class="col-md-6 yearbook-images">
-                    <div class="row gy-4">
-                        <div class="col-lg-6 d-flex justify-content-center align-items-center first-row" >
-                            <img src="./img/homepage-webslider-1.jpg" alt="" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" >
-                        </div>
-                        <div class="col-lg-6 d-flex justify-content-center align-items-center first-row">
-                            <img src="./img/homepage-webslider-1.jpg" alt="" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
-                        </div>
-                        <div class="col-lg-12 d-flex justify-content-center align-items-center second-row">
-                            <img src="./img/homepage-webslider-1.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 yearbook-form">
-                    <h1 class="text-center py-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" >FILL UP THE FORM</h1>
-                    <div class="card shadow border-0 " data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
-                        <div class="Fill-up p-5">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="fullName" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="fullName"
-                                        placeholder="Enter your full name" required>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="gradYear" class="form-label">Year of Graduation</label>
-                                    <input type="number" class="form-control" id="gradYear"
-                                        placeholder="Enter your graduation year" required>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="program" class="form-label">Program</label>
-                                    <input type="Program" class="form-control" id="Prog"
-                                        placeholder="Enter your Program " required>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label class="form-label">What are you checking for?</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="yearbookCheck">
-                                        <label class="form-check-label" for="yearbookCheck">
-                                            Yearbook
-                                        </label>
+                                <div class="row gy-3">
+                                    <div class="col-lg-6 personnel-drop">
+                                        <label for="exampleInputfacility" class="form-label m-0 p-0">Personnels</label>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Personnel1
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="gradPicCheck">
-                                        <label class="form-check-label" for="gradPicCheck">
-                                            Graduation Pictures
-                                        </label>
+                                    <div class="col-lg-6 text-center">
+                                        <p>Cost</p>
+                                        <p>Php 15000</p>
                                     </div>
-                                </div>
-
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary btn-md">Check
-                                        Availability</button>
+                                    <div class="col-lg-6">
+                                        <label for="exampleInputnumhours" class="form-label">Number or Hours</label>
+                                        <input type="Facility" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="numhoursHelp">
+                                    </div>
+                                    <div class="col-lg-6 text-center">
+                                        <p>TotalmCost</p>
+                                        <p>Php 15000</p>
+                                    </div>
+                                    <div class="form-button text-center py-3">
+                                        <button class="btn btn-outline-danger m-0"><a href=""><i
+                                                    class="fa-solid fa-plus"></i></a></button>
+                                        <button class="btn btn-outline-danger m-0"><a href=""><i
+                                                    class="fa-solid fa-minus"></i></a></button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -468,70 +403,97 @@
 
 
 
-    <section id="homepage-staffs" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"      >
-        <header class="homepage-staff p-0">
-            <div
-                class="container-fluid homepage-staff-header-bg d-flex flex-column justify-content-center align-items-center">
-                <h1>Resource Generation Office Staffs</h1>
-                <p style="width: 40rem;">committed professionals ensuring quality services,
-                    efficient management, and excellent support for the BatStateU community.</p>
-            </div>
-        </header>
 
-        <div class="container-fluid homepage-staffs-card p-4">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-4">
-                    <div class="card p-3 border-0 shadow" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" >
-                        <div class="card-first-row d-flex justify-content-center">
-                            <div class="card-text text-center">
-                                <img src="./img/homepage-webslider-1.jpg" alt="...">
-                                <h4 class="m-0 pt-3">Jhon Doe Donut</h4>
-                                <p>Position : <span>RGO Head</span></p>
+
+    <section id="gradpict" class="container-fluid grad-full-container pb-5">
+        <div class="container grad-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h1 class="m-0 pt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Graduation Pictures &
+                Yearbook</h1>
+            <p class="pb-5" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200"><i>Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Vitae, eaque.</i></p>
+            <div class="graduation-content">
+                <div class="row gy-5">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="py-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Fill Up
+                        </h4>
+                        <form class="grad-form p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="row gy-3">
+                                <div class="col-lg-6">
+                                    <label for="exampleInputfname" class="form-label">Fullname</label>
+                                    <input type="fullname" class="form-control" id="exampleInputfname"
+                                        aria-describedby="fullnameHelp">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="exampleInputgrad" class="form-label">Year Of Graduation</label>
+                                    <input type="graduate" class="form-control" id="exampleInputgrad"
+                                        aria-describedby="graduateHelp">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="exampleInputprog" class="form-label">Program</label>
+                                    <input type="program" class="form-control" id="exampleInputprog"
+                                        aria-describedby="programHelp">
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <label for="exampleInputcfor" class="form-label">Choose</label>
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-danger dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Yearbook
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Graduation Picture</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="contact"><i class="fa-regular fa-envelope px-2"></i>
-                                <span>Elitdevs2gmail.com</span>
+                        </form>
+                        <div class="form-footer-text">
+                            <div class="grad-icon py-4">
+                                <i class="fa-solid fa-photo-film py-2" data-aos="fade-up" data-aos-duration="1000"
+                                    data-aos-delay="200"></i>
+                                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">The future is
+                                    unwritten, and I step forward with courage, dreams, and the
+                                    determination to make a difference. The best is yet to come!</p>
                             </div>
-                            <div class="contact"><i class="fa-solid fa-phone px-2"></i> <span>+63-123-123-1234</span>
+                            <div class="year-icon">
+                                <i class="fa-solid fa-book py-2" data-aos="fade-up" data-aos-duration="1000"
+                                    data-aos-delay="200"></i>
+                                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Cherish the
+                                    memories, embrace the journey, and chase your dreams. Every challenge has
+                                    shaped you, every lesson has strengthened you, and every moment has led you to this
+                                    day. The best is yet to come—go forward with confidence and a heart full of dreams!"
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-4">
-                    <div class="card p-3 border-0 shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-                        <div class="card-first-row d-flex justify-content-center">
-                            <div class="card-text text-center">
-                                <img src="./img/homepage-webslider-1.jpg" alt="...">
-                                <h4 class="m-0 pt-3">Jhon Doe Donut</h4>
-                                <p>Position : <span>RGO Head</span></p>
-                            </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="contact"><i class="fa-regular fa-envelope px-2"></i>
-                                <span>Elitdevs2gmail.com</span>
-                            </div>
-                            <div class="contact"><i class="fa-solid fa-phone px-2"></i> <span>+63-123-123-1234</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-4">
-                    <div class="card p-3 border-0 shadow" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" >
-                        <div class="card-first-row d-flex justify-content-center">
-                            <div class="card-text text-center">
-                                <img src="./img/homepage-webslider-1.jpg" alt="...">
-                                <h4 class="m-0 pt-3">Jhon Doe Donut</h4>
-                                <p>Position : <span>RGO Head</span></p>
-                            </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="contact"><i class="fa-regular fa-envelope px-2"></i>
-                                <span>Elitdevs2gmail.com</span>
-                            </div>
-                            <div class="contact"><i class="fa-solid fa-phone px-2"></i> <span>+63-123-123-1234</span>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="grad-photos">
+                            <div class="row g-2">
+                                <div class="col-lg-6">
+                                    <div class="image1" data-aos="fade-up-right" data-aos-duration="1000"
+                                        data-aos-delay="200">
+                                        <img src="./img/animeschool-5.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-end">
+                                    <div class="image2" data-aos="fade-up-left" data-aos-duration="1000"
+                                        data-aos-delay="200">
+                                        <img src="./img/OIP.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-end">
+                                    <div class="image3" data-aos="fade-up-right" data-aos-duration="1000"
+                                        data-aos-delay="200">
+                                        <img src="./img/OIP.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" data-aos="fade-up-left" data-aos-duration="1000"
+                                    data-aos-delay="200">
+                                    <div class="image4">
+                                        <img src="./img/animeschool-5.webp" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -544,39 +506,183 @@
 
 
 
-    <footer>
-        <div class="homepage-links container-fluid px-5 pt-3">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 d-flex flex-column justify-content-center">
-                    <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Elite Devs</h3>
-                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" > a group of student developers working together to create innovative solutions for real-life
-                        problems. As part of our capstone project, we use our skills, creativity, and teamwork to build
-                        practical and impactful projects.
 
-                        We are committed to learning, improving, and making a positive impact through our projects. Our
-                        goal is to show how students can turn ideas into meaningful solutions</p>
+
+
+
+
+    <section id="staffs">
+        <div class="container staff-container py-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="staff-cards">
+                <div class="staff-heading-text">
+                    <h1 class="m-0 text-center" data-aos="fade-down-right" data-aos-duration="1000"
+                        data-aos-delay="200">Resource
+                        Generation Office Staffs</h1>
+                    <p class="text-center" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200">
+                        <i>Committed professionals
+                            ensuring quality services, efficient management,<br> and excellent
+                            support for
+                            the BatStateU community.</i>
+                    </p>
                 </div>
-                <div class="col-lg-4 col-md-12 links py-5">
-                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><i class="fa-brands fa-facebook fb"></i><span class="mx-3"><a href="">Elite Devs</a></span></h4>
-                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><i class="fa-brands fa-square-instagram ig"></i><span class="mx-3"><a href="">Elite Devs
-                                IG</a></span></h4>
-                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><i class="fa-solid fa-envelope em"></i><span class="mx-3"><a
-                                href="">EliteDevs@gmail.com</a></span></h4>
-                </div>
-                <div class="col-lg-4 col-md-12 feedback-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                    <form class="feedback-form">
-                        <div class="mb-3">
-                            <label for="feedback" class="form-label">Your Feedback</label>
-                            <textarea class="form-control" id="feedback"
-                                placeholder="Write your feedback here"></textarea>
+                <div class="row gy-4 pt-5 ">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card d-flex flex-column justify-conten-center align-items-center py-4"
+                            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="./img/profile.jpg" alt="">
+                            <div class="card-body text-center pb-0">
+                                <h6>Monaliza C. Drio</h6>
+                                <p>Head,Resource Generation <br>And External Affairs</p>
+                            </div>
+                            <div class="staff-links d-flex flex-row justify-content-around align-items-center py-4">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-message"></i>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-danger w-100"
-                            style="background-color: #ef233c; border: none;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Submit</button>
-                    </form>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card d-flex flex-column justify-conten-center align-items-center py-4"
+                            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="./img/profile.jpg" alt="">
+                            <div class="card-body text-center pb-0">
+                                <h6>Donalyn B. Celo</h6>
+                                <p>Houseparent / Cash<br>Collecting Officer</p>
+                            </div>
+                            <div class="staff-links d-flex flex-row justify-content-around align-items-center py-4">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card d-flex flex-column justify-conten-center align-items-center py-4"
+                            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="./img/profile.jpg" alt="">
+                            <div class="card-body text-center pb-0">
+                                <h6>Pamela Marie B. Bauyon</h6>
+                                <p>Administrative Aide<br>VI</p>
+                            </div>
+                            <div class="staff-links d-flex flex-row justify-content-around align-items-center py-4">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card d-flex flex-column justify-conten-center align-items-center py-4"
+                            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="./img/profile.jpg" alt="">
+                            <div class="card-body text-center pb-0">
+                                <h6>Brian Clyde B. Maligaya</h6>
+                                <p>Administrative Aide<br>VI</p>
+                            </div>
+                            <div class="staff-links d-flex flex-row justify-content-around align-items-around py-4">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+
+
+
+
+
+    <section id="links">
+        <footer>
+            <div class="container-fluid footer-cont p-5" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="200">
+                <div class="row ">
+                    <div class="col-lg-3  d-flex flex-column justify-content-center align-items-center">
+                        <div class="footer-image">
+                            <img src="./img/Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo.png"
+                                alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="media d-flex flex-row justify-content-between align-items-center py-4">
+                                <a href="" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-delay="200"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="" data-aos="fade-up-left" data-aos-duration="1000"
+                                data-aos-delay="200"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center align-items-center">
+                        <div class="footer-text ">
+                            <div class="footer-text-border">
+                                <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Elite Devs</h4>
+                                <p class="m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">A team
+                                    of student developers
+                                    working together to create innovative and practical solutions for real-world
+                                    problems.
+                                    Through
+                                    our capstone project, we apply our skills, creativity, and teamwork to make a
+                                    meaningful
+                                    impact
+                                    while continuously learning and improving.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center align-items-center">
+                        <div class="footer-quick-links">
+                            <div class="footer-links-border">
+                                <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Quick Links</h4>
+                                <p class="m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                                        href=""><i class="fa-solid fa-link"></i> Home</a></p>
+                                <p class="m-0 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                                        href=""><i class="fa-solid fa-link"></i> Merchandise Browsing</a></p>
+                                <p class="m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                                        href=""><i class="fa-solid fa-link"></i> Announcement</a></p>
+                                <p class="m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                                        href=""><i class="fa-solid fa-link"></i> Reservation</a></p>
+                                <p class="m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                                        href=""><i class="fa-solid fa-link"></i> Facility Rentals</a></p>
+                                <p class="m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                                        href=""><i class="fa-solid fa-link"></i> Graduation Pictures &
+                                        Yearbook</a></p>
+                                <p class="m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                                        href=""><i class="fa-solid fa-link"></i> Staffs</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-feedback">
+                            <div class="footer-feedback-border">
+                                <form class="feedback-form pt-4">
+                                    <div class="mb-3">
+                                        <label for="feedback" class="form-label" data-aos="fade-up-left"
+                                            data-aos-duration="1000" data-aos-delay="200">Your Feedback</label>
+                                        <textarea class="form-control" id="feedback"
+                                            placeholder="We Value Your Feedback" data-aos="fade-up"
+                                            data-aos-duration="1000" data-aos-delay="200"></textarea>
+                                    </div>
+                                    <div class="feedback-button text-end">
+                                        <button class="btn btn-outline-danger" data-aos="fade-up"
+                                            data-aos-duration="1000" data-aos-delay="200"><a href="">Submit</a></button>
+                                    </div>
+                                    <div class="others d-flex flex-row justify-content-around py-3">
+                                        <a href="" data-aos="fade-up-right" data-aos-duration="1000"
+                                            data-aos-delay="200"><i class="fa-solid fa-phone"></i> +6398-456-234</a>
+                                        <a href="" data-aos="fade-up-left" data-aos-duration="1000"
+                                            data-aos-delay="200"><i class="fa-solid fa-location-dot"></i>
+                                            Bucana,Nasugbu</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
 
 
 
